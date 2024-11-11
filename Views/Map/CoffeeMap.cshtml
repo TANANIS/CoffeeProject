@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Coffee Map";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="~/css/MapStyle.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>全球咖啡產地</h1>
+
+        <!-- 地圖區域 -->
+        <div id="map" style="height: 500px;"></div> <!-- 地圖容器 -->
+        <!-- 互動按鈕區域，顯示點擊的咖啡產地資料 -->
+        <div id="coffeeDetails">
+            <h3 id="countryName"></h3>
+            <p id="countryDescription"></p>
+            <div id="coffeeVarieties"></div> <!-- 顯示咖啡品種與特色 -->
+            <a id="productLink" href="" class="btn btn-primary">查看商品</a>
+        </div>
+    </div>
+
+
+    <!-- 單獨豆類區域 -->
+    <div id="coffeeVarietiesTable">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>地區</th>
+                    <th>咖啡豆處理法</th>
+                    <th>烘焙程度</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button class="btn btn-outline-primary" data-category="origin" data-index="0">巴西</button></td>
+                    <td><button class="btn btn-outline-primary" data-category="processing" data-index="0">日曬</button></td>
+                    <td><button class="btn btn-outline-primary" data-category="roasting" data-index="0">淺焙</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-outline-primary" data-category="origin" data-index="1">瓜地馬拉</button></td>
+                    <td><button class="btn btn-outline-primary" data-category="processing" data-index="1">水洗</button></td>
+                    <td><button class="btn btn-outline-primary" data-category="roasting" data-index="1">中焙</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-outline-primary" data-category="origin" data-index="2">衣索比亞</button></td>
+                    <td><button class="btn btn-outline-primary" data-category="processing" data-index="2">蜜處理</button></td>
+                    <td><button class="btn btn-outline-primary" data-category="roasting" data-index="2">深焙</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-outline-primary" data-category="origin" data-index="3">肯亞</button></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 展開的介紹區域 -->
+    <div id="detailSection" style="display:none;">
+        <h4>介紹</h4>
+        <p id="detailDescription"></p>
+        <div id="detailBeans" class="list-group">
+            <!-- 這裡會顯示相應的豆類選項 -->
+        </div>
+    </div>
+
+
+
+
+
+            <!-- 區域三：咖啡知識區 -->
+            <div class="col-md-6">
+                <h3>Coffee Knowledge</h3>
+                <p>Learn about the origins, brewing methods, and best practices for storing your coffee beans!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/jquery-3.7.1.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="~/js/MapScript.js"></script>
+</body>
+</html>

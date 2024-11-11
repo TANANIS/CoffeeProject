@@ -1,0 +1,56 @@
+[
+  {
+    "coords": [ 9.145, 40.489673 ],
+    "name": "衣索比亞",
+    "code": "ethiopia",
+    "description": "這裡是衣索比亞的介紹，之後要改。",
+    "varieties": [
+      {
+        "name": "耶加雪夫",
+        "flavor": "果香、花香、清新",
+        "brew": "手沖、濾過"
+      },
+      {
+        "name": "哈拉爾",
+        "flavor": "莓果味、濃郁",
+        "brew": "義式濃縮"
+      }
+    ]
+  },
+  {
+    "coords": [ -14.2350, -51.9253 ],
+    "name": "巴西",
+    "code": "brazil",
+    "description": "這裡是巴西的介紹，之後要改。",
+    "varieties": [
+      {
+        "name": "聖塔瑪麗亞",
+        "flavor": "堅果味、巧克力",
+        "brew": "手沖、滴漏"
+      },
+      {
+        "name": "波旁",
+        "flavor": "甜美、果香",
+        "brew": "義式濃縮"
+      }
+    ]
+  },
+  {
+    "coords": [ 4.5709, -74.2973 ],
+    "name": "哥倫比亞",
+    "code": "colombia",
+    "description": "這裡是哥倫比亞的介紹，之後要改。",
+    "varieties": [
+      {
+        "name": "卡法",
+        "flavor": "柔和、甜美",
+        "brew": "濾泡、冷萃"
+      },
+      {
+        "name": "錫卡拉",
+        "flavor": "濃郁、堅果香",
+        "brew": "義式濃縮"
+      }
+    ]
+  }
+]
