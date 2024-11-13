@@ -1,8 +1,8 @@
-using CoffeeMap20241106.Models;
+using Coffee.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace CoffeeMap20241106.Controllers
+namespace Coffee.Controllers
 {
     public class HomeController : Controller
     {
@@ -27,16 +27,6 @@ namespace CoffeeMap20241106.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        [Route("language/coffeeMap")]
-        public class MapController : Controller
-        {
-            [Route("")]
-            public IActionResult CoffeeMap()
-            {
-                return View();
-            }
         }
     }
 }

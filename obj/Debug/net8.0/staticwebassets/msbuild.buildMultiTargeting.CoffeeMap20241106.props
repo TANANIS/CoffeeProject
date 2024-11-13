@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\CoffeeMap20241106.props" />
-</Project>

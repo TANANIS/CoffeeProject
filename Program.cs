@@ -5,12 +5,7 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// 根路由重定向到 /language/coffeeMap
-app.MapGet("/", (HttpContext httpContext) =>
-{
-    httpContext.Response.Redirect("/language/coffeeMap");
-});
-
+// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -20,12 +15,13 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
 app.UseRouting();
+
 app.UseAuthorization();
 
-// 設定 Controller 路由
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Map}/{action=CoffeeMap}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

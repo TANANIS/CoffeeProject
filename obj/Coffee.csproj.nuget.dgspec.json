@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JSrad\\Desktop\\CoffeeMapMVC20241106\\CoffeeMap20241106\\CoffeeMap20241106.csproj": {}
+    "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JSrad\\Desktop\\CoffeeMapMVC20241106\\CoffeeMap20241106\\CoffeeMap20241106.csproj": {
+    "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JSrad\\Desktop\\CoffeeMapMVC20241106\\CoffeeMap20241106\\CoffeeMap20241106.csproj",
-        "projectName": "CoffeeMap20241106",
-        "projectPath": "C:\\Users\\JSrad\\Desktop\\CoffeeMapMVC20241106\\CoffeeMap20241106\\CoffeeMap20241106.csproj",
+        "projectUniqueName": "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj",
+        "projectName": "Coffee",
+        "projectPath": "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj",
         "packagesPath": "C:\\Users\\JSrad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JSrad\\Desktop\\CoffeeMapMVC20241106\\CoffeeMap20241106\\obj\\",
+        "outputPath": "C:\\Users\\JSrad\\source\\repos\\Coffee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\VisualStudio\\Shared\\NuGetPackages"

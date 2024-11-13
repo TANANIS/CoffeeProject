@@ -1,4 +1,4 @@
-namespace CoffeeMap20241106.Models
+namespace Coffee.Models
 {
     public class ErrorViewModel
     {
