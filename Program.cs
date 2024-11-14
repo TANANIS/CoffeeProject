@@ -1,7 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using PROJECT.Controllers;
+using PROJECT.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// -----------------------------------------------------------------------------
+// 取得json連線
+builder.Services.AddDbContext<ProjectContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("ProjectConnection")));
+// -----------------------------------------------------------------------------
 
 var app = builder.Build();
 
@@ -22,6 +32,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Product}/{action=Index}/{id?}");
 
 app.Run();

@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Coffee")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("PROJECT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Coffee")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Coffee")]
+[assembly: System.Reflection.AssemblyProductAttribute("PROJECT")]
+[assembly: System.Reflection.AssemblyTitleAttribute("PROJECT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 類別產生。

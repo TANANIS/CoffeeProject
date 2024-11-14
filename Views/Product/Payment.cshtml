@@ -1,0 +1,150 @@
+@model IEnumerable<PROJECT.Models.Product>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>訂單資訊</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            display: inline-block;
+            width: 48%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        td, th {
+            padding: 10px;
+            vertical-align: top;
+        }
+        .form-section, .order-section {
+            width: 48%;
+        }
+        .section-title {
+            font-weight: bold;
+            text-align: left;
+            padding-bottom: 10px;
+        }
+        .input-field, .input-area {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .input-area {
+            height: 100px;
+            resize: none;
+        }
+        .total-price {
+            font-weight: bold;
+            text-align: right;
+        }
+        .order-summary {
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: right;
+        }
+        .container {
+            background-color: white;
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="~/Product/OrderFormData" method="post">
+        <!-- 帳單 -->
+        <table class="form-section">
+            <tr>
+                <td>
+                    <div class="section-title">帳單資訊</div>
+                    <label for="name">姓名 *</label>
+                    <br>
+                    <input type="text" id="name" class="input-field" name="name" value="sss" required>
+                    <br>
+                    <label for="email">電子郵件地址 *</label>
+                    <br>
+                    <input type="email" id="email" class="input-field" name="email" value="ddd@gmail.com" required>
+                    <br>
+                    <label for="phone">聯絡電話 *</label>
+                    <br>
+                    <input type="tel" id="phone" class="input-field" name="phone" value="0000" required>
+                    <br>
+                    <label for="company-id">建立發票編號</label>
+                    <br>
+                    <input type="text" id="company-id" class="input-field" name="company-id" placeholder="選填">
+                    <br>
+                    <div class="section-title">額外資訊</div>
+                    <label for="order-notes">訂單備註 (選填)</label>
+                    <br>
+                    <textarea id="order-notes" class="input-area" name="order-notes"></textarea>
+                </td>
+            </tr>
+        </table>
+        <!-- 訂單 -->
+        <table class="order-section">
+            <tr>
+                <td>
+                    <div class="section-title">您的訂單</div>
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <th style="text-align: left;"><nobr>商品</nobr></th>
+                            <th style="text-align: right;"><nobr>數量</nobr></th>
+                            <th style="text-align: right;"><nobr>單價</nobr></th>
+                            <th style="text-align: right;"><nobr>總計</nobr></th>
+                        </tr>
+                        <hr>
+                        <!-- 資料庫帶出來 -->
+                        @for (int i = 0; i < @ViewBag.ID.Count; i++)
+                        {
+                            <tr>
+                                <input type="hidden" name="itemNO" value="@ViewBag.ID[i]" />
+                                <input type="hidden" name="itemQTY" value="@ViewBag.QTY[i]" />
+                                <input type="hidden" name="itemProuductID" value="@ViewBag.ProductID[i]" />
+                                <input type="hidden" name="itemPrice" value="@ViewBag.Price[i]" />
+                                <input type="hidden" name="itemTotle" value="@ViewBag.itemtotle[i]" />
+                                <td> <nobr> @ViewBag.Name[i] </nobr> </td>
+                                <td style="text-align:right"> <nobr> @ViewBag.QTY[i] </nobr> </td>
+                                <td style="text-align:right"> <nobr> $@string.Format("{0:N0}", Convert.ToInt32(ViewBag.Price[i])) </nobr> </td>
+                                <td style="text-align:right"> <nobr> $@string.Format("{0:N0}", Convert.ToInt32(ViewBag.itemtotle[i])) </nobr> </td>
+                            </tr>
+                        }
+                        <tr>
+                            <td>總計:</td>
+                            <td colspan="3" style="text-align:right">
+                                <input type="hidden" name="totle" value="@ViewBag.Alltotle" />
+                                $@string.Format("{0:N0}", Convert.ToInt32(ViewBag.Alltotle))
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <label for="payment-method">付款方式:
+                        <select id="payment-method" class="input-field" name="payment-method">
+                            <option value="">信用卡</option>
+                            <option value="">貨到付款</option>
+                        </select>
+                    </label>
+                    <label for="Shipping-method">
+                        運送方式:
+                        <select id="Shipping-method" class="input-field" name="payment-method">
+                            <option value="">7-11</option>
+                            <option value="">宅配到家</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">下訂單</button></td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>
