@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\CoffeeGit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|c:\\coffeegit\\webapplication1_1105_tset_member5\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|solutionrelative:webapplication1_1105_tset_member5\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|c:\\coffeegit\\webapplication1_1105_tset_member5\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|solutionrelative:webapplication1_1105_tset_member5\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|c:\\coffeegit\\webapplication1_1105_tset_member5\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|solutionrelative:webapplication1_1105_tset_member5\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|c:\\coffeegit\\webapplication1_1105_tset_member5\\views\\account\\headerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|solutionrelative:webapplication1_1105_tset_member5\\views\\account\\headerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|c:\\coffeegit\\webapplication1_1105_tset_member5\\models\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|solutionrelative:webapplication1_1105_tset_member5\\models\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|c:\\coffeegit\\webapplication1_1105_tset_member5\\views\\account\\detailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6EB8A37-10FF-4D16-A6A6-48D239E978C5}|WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj|solutionrelative:webapplication1_1105_tset_member5\\views\\account\\detailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "WebApplication1_1105_TSET_member5\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "WebApplication1_1105_TSET_member5\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAA2wHAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T03:00:41.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "detailViewModel.cs",
+              "DocumentMoniker": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Views\\Account\\detailViewModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1_1105_TSET_member5\\Views\\Account\\detailViewModel.cs",
+              "ToolTip": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Views\\Account\\detailViewModel.cs",
+              "RelativeToolTip": "WebApplication1_1105_TSET_member5\\Views\\Account\\detailViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:10:14.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Orderheader.cs",
+              "DocumentMoniker": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Models\\Orderheader.cs",
+              "RelativeDocumentMoniker": "WebApplication1_1105_TSET_member5\\Models\\Orderheader.cs",
+              "ToolTip": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Models\\Orderheader.cs",
+              "RelativeToolTip": "WebApplication1_1105_TSET_member5\\Models\\Orderheader.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowB0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:05:51.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Orderdetail.cs",
+              "DocumentMoniker": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Models\\Orderdetail.cs",
+              "RelativeDocumentMoniker": "WebApplication1_1105_TSET_member5\\Models\\Orderdetail.cs",
+              "ToolTip": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Models\\Orderdetail.cs",
+              "RelativeToolTip": "WebApplication1_1105_TSET_member5\\Models\\Orderdetail.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T03:56:57.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "headerViewModel.cs",
+              "DocumentMoniker": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Views\\Account\\headerViewModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1_1105_TSET_member5\\Views\\Account\\headerViewModel.cs",
+              "ToolTip": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Views\\Account\\headerViewModel.cs",
+              "RelativeToolTip": "WebApplication1_1105_TSET_member5\\Views\\Account\\headerViewModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA4wBYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T03:34:54.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Views\\Account\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1_1105_TSET_member5\\Views\\Account\\Index.cshtml",
+              "ToolTip": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\Views\\Account\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1_1105_TSET_member5\\Views\\Account\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T03:10:18.255Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

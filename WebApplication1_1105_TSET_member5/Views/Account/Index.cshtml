@@ -1,0 +1,123 @@
+﻿@* @model IEnumerable<WebApplication1_1105_TSET_member5.Models.Orderheader>
+ *@
+@model List<WebApplication1_1105_TSET_member5.Views.Account.headerViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    .flexQQ{
+        display: flex;
+    } 
+</style>
+
+<h1>Index</h1>
+<hr />
+
+<div class="flexQQ">
+    <div>@await Html.PartialAsync("_PartialItem")</div>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @* @Html.DisplayNameFor(model => model.OrderId) *@
+                        OrderId
+                    </th>
+@*                     <th>
+                        @Html.DisplayNameFor(model => model.CustomerId)
+                    </th> *@
+                    <th>
+                        @* @Html.DisplayNameFor(model => model.OrderDate) *@
+                        OrderDate
+                    </th>
+                    <th>
+                        @* @Html.DisplayNameFor(model => model.Payment) *@
+                        Payment
+                    </th>
+                    <th>
+                        @* @Html.DisplayNameFor(model => model.Total) *@
+                        Total
+                    </th>
+                    <th>
+                        @* @Html.DisplayNameFor(model => model.OrderStatus) *@
+                        OrderStatus
+                    </th>
+                    <th>
+                        @* @Html.DisplayNameFor(model => model.ShipStatus) *@
+                        ShipStatus
+                    </th>
+                    <th>
+                        購買內容
+                    </th>
+@*                     <th>
+                        @Html.DisplayNameFor(model => model.CreateUser)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UpdateUser)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.CreateDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UpdateDate)
+                    </th> *@
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model) {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderId)
+                            </td>
+@*                             <td>
+                                @Html.DisplayFor(modelItem => item.CustomerId)
+                            </td> *@
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Payment)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Total)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OrderStatus)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ShipStatus)
+                            </td>
+                            <td>
+                            @foreach (var ct in item.DetailViewModels)
+                            {
+                                        <p>@ct.ProductName</p>
+                            }
+                        </td>
+
+@*                             <td>
+                                @Html.DisplayFor(modelItem => item.CreateUser)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UpdateUser)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreateDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UpdateDate)
+                            </td> *@
+                            <td>
+                @*                 <a asp-action="Edit" asp-route-id="@item.OrderId">Edit</a> |
+                 *@                <a asp-action="Details" asp-route-id="@item.OrderId">Details</a>
+                                    @*                 | <a asp-action="Delete" asp-route-id="@item.OrderId">Delete</a> *@
+@*                                         <a asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a> *@
+                                </td>
+                        </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
