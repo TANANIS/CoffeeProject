@@ -1,4 +1,4 @@
-namespace Coffee.Models
+namespace big.Models
 {
     public class ErrorViewModel
     {

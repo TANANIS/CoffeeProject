@@ -1,0 +1,56 @@
+﻿/* 下方兩大標題-區塊 */
+.detail-title {
+    background-color: rgb(145,202,164);
+    border-radius: 5px 30px;
+    /* 字元間距 */
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+/* 標題標籤 */
+.detail-title-introduction,
+.detail-title-howtouse {
+    font-weight: bolder;
+}
+/* 標題簡單介紹標籤-small */
+.detail-title-small {
+    font-size: 16px;
+    color: rgba(41, 52, 80, 0.8);
+}
+
+
+/* 卡片標題 */
+.card-header {
+    font-weight: bold;
+    font-size: 28px;
+}
+/* 卡片內文 */
+.card-body {
+    font-size: 22px;
+}
+
+
+/* 味道極座標圖 */
+canvas {
+    display: block;
+    /* 畫布為塊元素，避免上下空隙 */
+    margin: auto;
+    /* 畫布居中 */
+}
+
+
+/* 咖啡沖泡機算機-空白區域調整(推薦沖泡數據跟六個圖表的外邊界向上靠減少留白) */
+.Aicoffee-blank-revision {
+    margin: -30px 0 0 0
+}
+/* 咖啡沖泡機算機-計算結果-標題區塊-六個數據 */
+.Aicoffee-result-title-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 咖啡沖泡機算機-計算結果-標題區塊-三個數據 */
+.Aicoffee-result-title-3 {
+    border: solid 1px green;
+    padding: 5px 7px;
+    border-radius: 10px
+}
