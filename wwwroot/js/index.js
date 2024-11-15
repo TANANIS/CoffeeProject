@@ -40,40 +40,98 @@
     })
 
     // map 互動
-    $('.app-svg-map--world__name').on('mouseover', function () {
-        console.log("OK");
+    $('.app-svg-map--world__name').on('mouseover', function (e) {
+        //console.log("OK");
+
+        $("main").append(`<div class="newProd"></div>`)
 
         // 獲取當前元素的 data-title 屬性
         const countryTitle = $(this).data("title");
 
-        // 新增 div，後續把資料庫帶出的資料放在這邊
-        const newProd = $("<div class='newProd'>").html(`<p>${countryTitle}</p>`);
+        // 呼叫 ajax apple
+        apple(countryTitle);
 
-        // 將 div 加到 main 中
-        $("main").append(newProd);
-
-        let coordinate_x = $(this).offset().top - 30;
+        let coordinate_x = $(this).offset().top - 80;
         let coordinate_y = $(this).offset().left - 10;
 
-        // 設定 div 的 CSS
+        //設定 div 的 CSS
         $('.newProd').css({
             "position": "absolute",
             "top": coordinate_x,
             "left": coordinate_y,
             "background-color": "white",
-            "width": "280px",
+            "width": "260px",
             "height": "auto",
             "border": "1px solid black",
-            "font-size": "18px"
+            "font-size": "18px",
+            "BorderRadius": "3px"
         })
+
+
+        // 當 text 觸發到 hover 時，相對應的 path 也跟著改變顏色
+        let countryIdList = $('#world_map path[id]');
+
+        for (let i = 0; i < countryIdList.length; i++) {
+            if (countryIdList[i].id == countryTitle) {
+                let countryId = countryIdList[i].id;
+                $(`#${countryId}`).css("fill", "#2e724a");
+            }
+        }
 
     })
 
     $('.app-svg-map--world__name').on('mouseout', function () {
-        $(".newProd").css('display', 'none');
+        $(".newProd").remove();
+
+        // 當 text 解除 hover 時，相對應的 path 也跟著改回原本的顏色
+        const countryTitle = $(this).data("title");
+        let countryIdList = $('#world_map path[id]');
+
+        for (let i = 0; i < countryIdList.length; i++) {
+            if (countryIdList[i].id == countryTitle) {
+                let countryId = countryIdList[i].id;
+                $(`#${countryId}`).css("fill", "rgba(224, 234, 224, 1)");
+            }
+        }
     })
 
 })
+
+// ajax 取得 country 後回傳 div，並顯示在畫面上
+function apple(country) {
+    $.ajax({
+        url: "/Home/ProductData",
+        type: "POST",
+        data: { country: country },
+        success: function (data) {
+            let prodName = data.productName;
+            let countryName = data.country;
+            let prodImg = data.img;
+
+            // 新增 div，後續把資料庫帶出的資料放在這邊
+            const prodInfo = $("<div class='prodInfo'>").html(`
+                <img src="${prodImg}"></img>
+                <p>${countryName} - ${prodName}</p>`);
+
+            // 將 div 加到 newProd 中
+            $(".newProd").append(prodInfo);
+
+            $(".prodInfo").css({
+                "display": "flex",
+                "FlexDirection": "row",
+                "padding": "3px 3px 3px 6px"
+            })
+
+            $('.prodInfo img').css({
+                "width": "25%"
+            })
+
+            $('.prodInfo p').css({
+                "margin-left": "3px"
+            })
+        }
+    })
+}
 
 // Swiper 輪播設定
 function forSwiper() {

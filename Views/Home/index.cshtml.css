@@ -30,13 +30,15 @@ path {
     }
 
 text {
+    min-width: 30px;
+    min-height: 30px;
     font-size: 14px;
-    fill: black;
+    fill: none;
     animation: jump 2.3s infinite;
+    stroke: #8fbc8f;
 }
 
     text:hover {
-        fill: red;
         cursor: default;
     }
 
