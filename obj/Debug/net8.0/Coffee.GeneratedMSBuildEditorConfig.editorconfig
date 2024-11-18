@@ -17,39 +17,35 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Coffee
 build_property.RootNamespace = Coffee
-build_property.ProjectDir = C:\Users\chuu0\Desktop\coffee\
+build_property.ProjectDir = D:\coffee\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\chuu0\Desktop\coffee
+build_property.MSBuildProjectDirectory = D:\coffee
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/chuu0/Desktop/coffee/Views/Product/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/chuu0/Desktop/coffee/Views/Shared/Error.cshtml]
+[D:/coffee/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chuu0/Desktop/coffee/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/coffee/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chuu0/Desktop/coffee/Views/_ViewImports.cshtml]
+[D:/coffee/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chuu0/Desktop/coffee/Views/_ViewStart.cshtml]
+[D:/coffee/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/chuu0/Desktop/coffee/Views/Home/Index.cshtml]
+[D:/coffee/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-pacp4wtgdj
 
-[C:/Users/chuu0/Desktop/coffee/Views/Shared/_Layout.cshtml]
+[D:/coffee/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e9i5ae7jr7

@@ -35,13 +35,6 @@ namespace Coffee.Controllers
 
             string chineseCountry = countryDic.FirstOrDefault(x => x.Key == country).Value;
 
-            //var data = (from xa in _context.Products
-            //           where xa.Country == chineseCountry
-            //           orderby xa.ProductId descending
-            //           select new Product { ProductName = xa.ProductName, Img = xa.Img }).FirstOrDefault();
-
-            //string s = Newtonsoft.Json.JsonConvert.SerializeObject(data);
-
             //var query = (from o in _context.Products
             //             where o.Id == (from i in _context.Products
             //                            where i.Country == "巴西"

@@ -62,7 +62,7 @@
             "background-color": "white",
             "width": "260px",
             "height": "auto",
-            "border": "1px solid black",
+            "border": "1px solid #2e724a",
             "font-size": "18px",
             "BorderRadius": "3px"
         })
@@ -116,6 +116,7 @@ function apple(country) {
             // 將 div 加到 newProd 中
             $(".newProd").append(prodInfo);
 
+            // 設定 newProd 的 CSS
             $(".prodInfo").css({
                 "display": "flex",
                 "FlexDirection": "row",

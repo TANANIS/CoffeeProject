@@ -33,7 +33,7 @@ text {
     min-width: 30px;
     min-height: 30px;
     font-size: 14px;
-    fill: none;
+    fill: #8fbc8f;
     animation: jump 2.3s infinite;
     stroke: #8fbc8f;
 }
