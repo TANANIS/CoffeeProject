@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\coffee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|d:\\coffee\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|d:\\coffee\\views\\home\\index.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\home\\index.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|d:\\coffee\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|d:\\coffee\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|d:\\coffee\\views\\shared\\_layout_en.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\shared\\_layout_en.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|d:\\coffee\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|d:\\coffee\\views\\home\\index_en.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\home\\index_en.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|d:\\coffee\\views\\home\\index.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\home\\index.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +30,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\coffee\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\coffee\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\coffee\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\coffee\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAAK8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-18T02:36:23.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout_En.cshtml",
+              "DocumentMoniker": "D:\\coffee\\Views\\Shared\\_Layout_En.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout_En.cshtml",
+              "ToolTip": "D:\\coffee\\Views\\Shared\\_Layout_En.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout_En.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-18T01:11:18.271Z",
+              "WhenOpened": "2024-11-18T02:31:51.473Z",
               "EditorCaption": ""
             },
             {
@@ -51,41 +68,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.cshtml.css",
-              "DocumentMoniker": "D:\\coffee\\Views\\Home\\index.cshtml.css",
-              "RelativeDocumentMoniker": "Views\\Home\\index.cshtml.css",
-              "ToolTip": "D:\\coffee\\Views\\Home\\index.cshtml.css",
-              "RelativeToolTip": "Views\\Home\\index.cshtml.css",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-15T14:08:30.51Z",
+              "DocumentIndex": 3,
+              "Title": "Index_En.cshtml",
+              "DocumentMoniker": "D:\\coffee\\Views\\Home\\Index_En.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index_En.cshtml",
+              "ToolTip": "D:\\coffee\\Views\\Home\\Index_En.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index_En.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-18T02:26:29.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "index.js",
-              "DocumentMoniker": "D:\\coffee\\wwwroot\\js\\index.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\index.js",
-              "ToolTip": "D:\\coffee\\wwwroot\\js\\index.js",
-              "RelativeToolTip": "wwwroot\\js\\index.js",
-              "ViewState": "AgIAADQAAAAAAAAAAAAgwEAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-15T14:07:30.617Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\coffee\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\coffee\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-18T01:11:18.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\coffee\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\coffee\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwCgAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T14:05:56.374Z",
+              "DocumentIndex": 4,
+              "Title": "index.cshtml.css",
+              "DocumentMoniker": "D:\\coffee\\Views\\Home\\index.cshtml.css",
+              "RelativeDocumentMoniker": "Views\\Home\\index.cshtml.css",
+              "ToolTip": "D:\\coffee\\Views\\Home\\index.cshtml.css",
+              "RelativeToolTip": "Views\\Home\\index.cshtml.css",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAgwG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-15T14:08:30.51Z",
               "EditorCaption": ""
             }
           ]

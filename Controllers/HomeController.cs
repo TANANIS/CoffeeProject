@@ -21,6 +21,11 @@ namespace Coffee.Controllers
             return View();
         }
 
+        public IActionResult Index_En()
+        {
+            return View();
+        }
+
         [HttpPost]
         public JsonResult ProductData(string country)
         {

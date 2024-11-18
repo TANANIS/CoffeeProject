@@ -108,6 +108,116 @@ text[b-pacp4wtgdj] {
         margin-bottom: 10px;
     }
 }
+/* _content/Coffee/Views/Home/Index_En.cshtml.rz.scp.css */
+/* world map */
+.app-svg-map--world svg[b-7teomaef05] {
+    top: 60px;
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+path[b-7teomaef05] {
+    fill: rgba(224, 234, 224, 1);
+    stroke: #ffffff;
+    opacity: 1;
+    stroke-opacity: 1;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    transform: matrix(0.3474, 0, 0, 0.3474, 0, 0);
+    fill-opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+path[b-7teomaef05] {
+    opacity: 1;
+    display: block;
+    z-index: 1;
+}
+
+    path:hover[b-7teomaef05] {
+        fill: #2e724a;
+    }
+
+text[b-7teomaef05] {
+    min-width: 30px;
+    min-height: 30px;
+    font-size: 14px;
+    fill: #8fbc8f;
+    animation: jump-b-7teomaef05 2.3s infinite;
+    stroke: #8fbc8f;
+}
+
+    text:hover[b-7teomaef05] {
+        cursor: default;
+    }
+
+@keyframes jump-b-7teomaef05 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, 1px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* 商品圖輪播 */
+.prodTitle[b-7teomaef05] {
+    padding-top: 10px;
+    padding-left: 25px;
+    color: #ffffff;
+    font-size: 1.8em;
+}
+
+.recommend[b-7teomaef05] {
+    height: 350px;
+    background-color: #2e724a;
+    /* overflow-x: hidden; */
+}
+
+.swiper[b-7teomaef05] {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-slide img[b-7teomaef05] {
+    display: block;
+    height: 280px;
+    object-fit: cover;
+}
+
+.swiper-slide[b-7teomaef05] {
+    text-align: center;
+    font-size: 18px;
+    background: #2e724a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* map */
+    .map_area[b-7teomaef05] {
+        display: none;
+    }
+
+    /* Product */
+    .recommend[b-7teomaef05] {
+        height: 100%;
+        background-color: white;
+    }
+
+    .prodTitle[b-7teomaef05] {
+        color: #2e724a;
+        margin-bottom: 10px;
+    }
+}
 /* _content/Coffee/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
@@ -151,6 +261,55 @@ button.accept-policy[b-e9i5ae7jr7] {
 }
 
 .footer[b-e9i5ae7jr7] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/Coffee/Views/Shared/_Layout_En.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-3ypm0imk7d] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-3ypm0imk7d] {
+  color: #0077cc;
+}
+
+.btn-primary[b-3ypm0imk7d] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-3ypm0imk7d], .nav-pills .show > .nav-link[b-3ypm0imk7d] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-3ypm0imk7d] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-3ypm0imk7d] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-3ypm0imk7d] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-3ypm0imk7d] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-3ypm0imk7d] {
   position: absolute;
   bottom: 0;
   width: 100%;
