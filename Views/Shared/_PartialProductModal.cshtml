@@ -1,0 +1,83 @@
+﻿@* Modal 產品資訊互動視窗 *@
+@model BigPorject.Models.Product
+<div class="modalFixed">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" onclick="modalBtnClose(this)"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            @* 產品圖 *@
+                            <div class="productImg">
+                                @* 產品大圖 *@
+                                <div class="bigImg">
+                                    <div class="bigImgWrapper">
+                                        <div><img src="/img/neko.png" class="mainImg" /></div>
+                                        <div><img src="/img/fish.png" class="mainImg" /></div>
+                                        <div><img src="/img/pig.png" class="mainImg" /></div>
+                                    </div>
+                                    <a class="prev" onclick="slideImg(-1)">&#10094;</a>
+                                    <a class="next" onclick="slideImg(1)">&#10095;</a>
+                                </div>
+                                @* 產品縮圖 *@
+                                <div class="smallImg">
+                                    <div class="row">
+                                        <img src="/img/neko.png" class="col-4 subImg" onclick="changeImg(0)" />
+                                        <img src="/img/fish.png" class="col-4 subImg" onclick="changeImg(1)" />
+                                        <img src="/img/pig.png" class="col-4 subImg" onclick="changeImg(2)" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            @* 產品規格 *@
+                            <div class="productFormat">
+                                <h1>@Model.ProductName</h1>
+                                <p><span>產地 : </span>@Model.Country</p>
+                                <p><span>風味 : </span>@Model.Flavor</p>
+                                <p><span>處理法 : </span>@Model.Method</p>
+                                <p><span>烘焙程度 : </span>@Model.Baking</p>
+                                <p><span>價格 : </span>NT.@Model.Price</p>
+                                @* 數量 *@
+                                <div class="modalUOMcomponent">
+                                    @* 可在函式裡設定最大最小值 *@
+                                    <button onclick="modalBtnUom(this)" name="minus">-</button>
+                                    <input type="number" value="1" readonly />
+                                    <button onclick="modalBtnUom(this)" name="plus">+</button>
+                                </div>
+                                @* 加入購物車 *@
+                                <div class="modalBtn">
+                                    <button class="btn btn-primary" 
+                                            data-id="@Model.ProductId" 
+                                            data-img="/img/neko.png" 
+                                            data-name="@Model.ProductName" 
+                                            data-price="@Model.Price"
+                                            onclick="modalBtnAdd(this)">加入購物車</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="productDesc">
+                            <div class="productDescText">
+                                <div>
+                                    <h3>產品描述</h3>
+                                </div>
+                                <div>
+                                    <p>@Model.Description</p>
+                                </div>
+                                <hr />
+                                <div>
+                                    <a href="#">more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\JSrad\\.nuget\\packages\\": {},
-    "E:\\VisualStudio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj",
+      "projectUniqueName": "C:\\MSIT60\\CoffeeProject\\Coffee.csproj",
       "projectName": "Coffee",
-      "projectPath": "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj",
-      "packagesPath": "C:\\Users\\JSrad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JSrad\\source\\repos\\Coffee\\obj\\",
+      "projectPath": "C:\\MSIT60\\CoffeeProject\\Coffee.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\MSIT60\\CoffeeProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\VisualStudio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\JSrad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -75,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,26 @@
+﻿@* 加入購物車清單 *@
+@model BigPorject.Controllers.CartItemData
+<div class="card cart">
+    <button type="button" class="btn-close" aria-label="Close" onclick="cartBtnClose(this)"></button>
+    <div class="row g-0">
+        <div class="col-4">
+            <div class="cartImg">
+                <img src="img/neko.png" class="img-fluid rounded-start" />
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="card-body">
+                <h5 class="card-title" data-id="@Model.proID">@Model.name</h5>
+                <h6 class="card-subtitle">NT.<span>@Model.price</span></h6>
+                <div class="cartText">
+                    <p>重量</p>
+                    <div class="cartBtn">
+                        <button onclick="cartBtnUom(this)" name="minus">-</button>
+                        <input type="number" value="@Model.qty" readonly />
+                        <button onclick="cartBtnUom(this)" name="plus">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
