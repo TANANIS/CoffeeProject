@@ -10,8 +10,8 @@ namespace WebApplication1_1105_TSET_member5.Views.Account
         [Required]
         [DataType(DataType.Password)]
         [StringLength(12, ErrorMessage = "密碼長度至少為 {2} 個字符", MinimumLength = 8)]
-        [RegularExpression(@"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$",
-        ErrorMessage = "密碼必須包含大寫字母、小寫字母、數字和特殊字符")]
+        [RegularExpression(@"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8,}$",
+        ErrorMessage = "密碼必須包含大小寫、數字")]
         public string? Password { get; set; }
     }
 }

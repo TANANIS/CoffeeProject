@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eqj+VhThHRI=",
+  "dgSpecHash": "LW8MEgQHSiQ=",
   "success": true,
-  "projectFilePath": "C:\\CoffeeGit\\WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj",
+  "projectFilePath": "C:\\Users\\ben64\\source\\repos\\WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5\\WebApplication1_1105_TSET_member5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ben64\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ben64\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

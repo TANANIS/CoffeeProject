@@ -5,106 +5,96 @@
 }
 
 <style>
-	.squre1{
-			width: 70%;
-			background-color: antiquewhite;
-		}
+	.squre1 {
+		width: 70%;
+		background-color: antiquewhite;
+	}
 </style>
 
-<h1>Profile</h1>
+<h1>會員資料</h1>
 <hr />
 <div class="flexQQ">
 	<div>@await Html.PartialAsync("_PartialItem")</div>
 	<div class="squre1">
 		<div class="row">
 			<div class="col-md-4">
-				<form asp-action="Edit">
-					@Html.HiddenFor(m => m.CustomerId)  <!-- 隱藏識別屬性 -->
+				<form asp-action="Edit" method="post" enctype="multipart/form-data">
+					@Html.HiddenFor(m => m.CustomerId)
 					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
-					<input type="hidden" asp-for="CustomerId" />
-					@*             <div class="form-group">
-					<label asp-for="Id" class="control-label"></label>
-					<input type="hidden" asp-for="Id" class="form-control" value="@Model.Id" />
-					<span asp-validation-for="Id" class="text-danger"></span>
-					</div> *@
 					<div class="form-group">
-						<label asp-for="UserId" class="control-label"></label>
-						<input asp-for="UserId" class="form-control" />
+						@* <label asp-for="UserId" class="control-label"></label> *@
+						@* <label class="control-label">使用者帳號</label> *@
+						<input type="hidden" asp-for="UserId" class="form-control" />
 						<span asp-validation-for="UserId" class="text-danger"></span>
 					</div>
 					<div class="form-group">
-						<label asp-for="Password" class="control-label"></label>
-						<input asp-for="Password" class="form-control" />
+						<input type="hidden" asp-for="Password" class="form-control" />
 						<span asp-validation-for="Password" class="text-danger"></span>
 					</div>
 					<div class="form-group">
-						<label asp-for="Email" class="control-label"></label>
+						<label class="control-label">電子信箱</label>
 						<input asp-for="Email" class="form-control" />
 						<span asp-validation-for="Email" class="text-danger"></span>
 					</div>
 					<div class="form-group">
-						<label asp-for="Phone" class="control-label"></label>
+						<label class="control-label">手機號碼</label>
 						<input asp-for="Phone" class="form-control" />
 						<span asp-validation-for="Phone" class="text-danger"></span>
 					</div>
 					<div class="form-group">
-						<label asp-for="Name" class="control-label"></label>
+						<label class="control-label">姓名</label>
 						<input asp-for="Name" class="form-control" />
 						<span asp-validation-for="Name" class="text-danger"></span>
 					</div>
 					<div class="form-group">
-						<label asp-for="Gender" class="control-label"></label>
-						<input asp-for="Gender" class="form-control" />
+						<label class="control-label">性別</label>
+						@* <input asp-for="Gender" class="form-control" /> *@
+						<select asp-for="Gender" class="form-control">
+							<option value="">請選擇</option> <!-- 預設選項 -->
+							<option value="true">男性</option>
+							<option value="false">女性</option>
+						</select>
 						<span asp-validation-for="Gender" class="text-danger"></span>
 					</div>
 					<div class="form-group">
-						<label asp-for="Birthday" class="control-label"></label>
-						<input asp-for="Birthday" class="form-control" />
+						<label class="control-label">生日</label>
+						<input asp-for="Birthday" type="date" class="form-control" />
 						<span asp-validation-for="Birthday" class="text-danger"></span>
 					</div>
 					<div class="form-group">
-						<label asp-for="ImgSrc" class="control-label"></label>
+						<label class="control-label">大頭像</label>
+						<img id="avatarPreview" src="@Model.ImgSrc" alt="Avatar Preview" width="100" height="100" style="display:block; margin-bottom: 10px;" />
 						<input asp-for="ImgSrc" class="form-control" type="file" />
 						<span asp-validation-for="ImgSrc" class="text-danger"></span>
 					</div>
 					<div class="form-group">
-						<label asp-for="Language" class="control-label"></label>
-						<input asp-for="Language" class="form-control" />
+						<label class="control-label">顯示語言</label>
+						@* <input asp-for="Language" class="form-control" /> *@
+						<select asp-for="Language" class="form-control">
+							<option value="">請選擇</option> <!-- 預設選項 -->
+							<option value="TW">中文</option>
+							<option value="EN">英文</option>
+							<option value="JP">日文</option>
+						</select>
 						<span asp-validation-for="Language" class="text-danger"></span>
 					</div>
 					<div class="form-group">
-						<label asp-for="ReceiverAddress" class="control-label"></label>
+						<label class="control-label">收件地址</label>
 						<input asp-for="ReceiverAddress" class="form-control" />
 						<span asp-validation-for="ReceiverAddress" class="text-danger"></span>
 					</div>
-					@* <div class="form-group">
-					<label asp-for="CreateUser" class="control-label"></label>
-					<input asp-for="CreateUser" class="form-control" />
-					<span asp-validation-for="CreateUser" class="text-danger"></span>
-					</div>
-					<div class="form-group">
-					<label asp-for="UpdateUser" class="control-label"></label>
-					<input asp-for="UpdateUser" class="form-control" />
-					<span asp-validation-for="UpdateUser" class="text-danger"></span>
-					</div>
-					<div class="form-group">
-					<label asp-for="CreateDate" class="control-label"></label>
-					<input asp-for="CreateDate" class="form-control" />
-					<span asp-validation-for="CreateDate" class="text-danger"></span>
-					</div>
-					<div class="form-group">
-					<label asp-for="UpdateDate" class="control-label"></label>
-					<input asp-for="UpdateDate" class="form-control" />
-					<span asp-validation-for="UpdateDate" class="text-danger"></span>
-					</div> *@
 					<div class="form-group">
 						<input type="submit" value="Save" class="btn btn-primary" />
+						@if (TempData["SaveSuccess"] != null)
+						{
+							<span class="text-success ml-3">儲存完成!</span>
+						}
 					</div>
 				</form>
 			</div>
 		</div>
 		<div>
-			<a asp-action="Index">Back to List</a>
+			<a asp-action="Index">返回訂單查詢</a>
 		</div>
 	</div>
 </div>
@@ -113,4 +103,16 @@
 	@{
 		await Html.RenderPartialAsync("_ValidationScriptsPartial");
 	}
+	<script>
+		document.getElementById("ImgSrc").addEventListener("change", function(event) {
+			var file = event.target.files[0]; // 取得選擇的檔案
+			if (file) {
+				var reader = new FileReader(); // 建立 FileReader 物件
+				reader.onload = function(e) {
+					document.getElementById("avatarPreview").src = e.target.result;
+				}
+				reader.readAsDataURL(file); // 將檔案讀取為 Data URL
+			}
+		});
+	</script>
 }

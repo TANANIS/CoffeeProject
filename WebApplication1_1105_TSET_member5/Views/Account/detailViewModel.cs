@@ -2,15 +2,17 @@
 {
     public class DetailViewModel
     {
-        public string? ProductId { get; set; }
 
         public string? ProductName { get; set; }
+
 
         public string OrderId { get; set; } = null!;
 
         public short OrderItem { get; set; }
 
-        public int Id { get; set; }
+        //public int Id { get; set; }
+
+        public string? ProductId { get; set; }
 
         public short? Qty { get; set; }
 

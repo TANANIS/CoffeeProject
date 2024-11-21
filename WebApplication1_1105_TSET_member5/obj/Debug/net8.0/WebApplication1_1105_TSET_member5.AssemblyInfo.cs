@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApplication1_1105_TSET_member5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f494083b9312a2e9c1531f177774e4f39760c24f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApplication1_1105_TSET_member5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApplication1_1105_TSET_member5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

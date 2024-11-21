@@ -1,5 +1,11 @@
-﻿@{
+﻿@using WebApplication1_1105_TSET_member5.Models
+@using Microsoft.AspNetCore.Mvc.Rendering
+@inject ProjectContext _context // 注入 DbContext
 
+
+
+@{
+    var member = _context.Customers.FirstOrDefault(u => u.CustomerId == TempData["id2"] as string);
 }
 
 <!DOCTYPE html>
@@ -11,6 +17,15 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApplication1_1105_TSET_member5.styles.css" asp-append-version="true" />
+    <style>
+        .profile-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* 圓形顯示 */
+            object-fit: cover; /* 保持圖片比例 */
+            border: 2px solid rgba(0, 0, 0, 0.2); /* 淡黑色邊框 */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -47,7 +62,22 @@
                         }
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">註冊會員</a>
+                        </li>  
+                        <li class="nav-item">
+                            @if (TempData["id2"] != null)
+                            {
+                                <img src="@TempData["avatar2"]" class="profile-img" />
+                                <span>@(member!.UserId)你好!</span>
+                                
+                            }
+                            else
+                            {
+                                <img src="/img/Member/defaultAvatar.jpg" class="profile-img" />
+                                <span>尚未登入</span>
+                            }
+
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -67,6 +97,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

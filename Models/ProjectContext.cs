@@ -69,6 +69,7 @@ public partial class ProjectContext : DbContext
                 .IsUnicode(false);
         });
 
+
         modelBuilder.Entity<Customer>(entity =>
         {
             entity.HasKey(e => e.CustomerId).HasName("PK__CUSTOMER__A4AE64B824E3E012");
@@ -113,6 +114,16 @@ public partial class ProjectContext : DbContext
                 .HasMaxLength(12)
                 .IsUnicode(false);
         });
+
+        //--------------記得加-----------------
+        //base.OnModelCreating(modelBuilder);
+
+        //// 告訴 EF Core 忽略 ID 屬性（這是識別屬性）
+        //modelBuilder.Entity<Customer>()
+        //            .Property(c => c.Id)
+        //            .ValueGeneratedOnAdd() // 確保 Id 是由資料庫自動生成的
+        //            .IsRequired(); // 確保是必填欄位
+        //--------------記得加-----------------
 
         modelBuilder.Entity<Orderdetail>(entity =>
         {
@@ -276,4 +287,5 @@ public partial class ProjectContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
 }
