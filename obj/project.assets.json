@@ -4733,23 +4733,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\jsrad\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\bak\\CoffeeProject-index - 複製 - 複製\\Coffee.csproj",
+      "projectUniqueName": "C:\\Users\\jsrad\\Desktop\\20241121\\CoffeeProject-index - 複製 - 複製\\Coffee.csproj",
       "projectName": "Coffee",
-      "projectPath": "C:\\Users\\user\\source\\bak\\CoffeeProject-index - 複製 - 複製\\Coffee.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\bak\\CoffeeProject-index - 複製 - 複製\\obj\\",
+      "projectPath": "C:\\Users\\jsrad\\Desktop\\20241121\\CoffeeProject-index - 複製 - 複製\\Coffee.csproj",
+      "packagesPath": "C:\\Users\\jsrad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jsrad\\Desktop\\20241121\\CoffeeProject-index - 複製 - 複製\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jsrad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4812,7 +4812,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
