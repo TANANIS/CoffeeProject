@@ -1,248 +1,102 @@
-﻿<!DOCTYPE html>
-<html lang="zh-tw">
+﻿@using WebApplication1_1105_TSET_member5.Models
+@using Microsoft.AspNetCore.Mvc.Rendering
+@inject ProjectContext _context // 注入 DbContext
+
+
+
+@{
+    var member = _context.Customers.FirstOrDefault(u => u.CustomerId == TempData["id2"] as string);
+}
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
-    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>@ViewData["Title"] - WebApplication1_1105_TSET_member5</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Coffee.styles.css" asp-append-version="true" />
-
+    <link rel="stylesheet" href="~/WebApplication1_1105_TSET_member5.styles.css" asp-append-version="true" />
+    <style>
+        .profile-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* 圓形顯示 */
+            object-fit: cover; /* 保持圖片比例 */
+            border: 2px solid rgba(0, 0, 0, 0.2); /* 淡黑色邊框 */
+        }
+    </style>
 </head>
 <body>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <header>
-        <nav>
-            <!-- 導覽列左邊 -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul class="menu">
-                <li><a href="#">商品分類</a></li>
-                <li><a href="#">產品地圖</a></li>
-                <li><a href="#">會員專區</a></li>
-                <li><a href="#">購物車</a></li>
-            </ul>
-            <div id="logo">
-                <a href="~/Home/Index"><img src="~/img/logo_white.png"></a>
-            </div>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebApplication1_1105_TSET_member5</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Index">會員專區</a>
+                        </li>
+                        @if (TempData["id2"] != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">登出</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">登入</a>
+                            </li>
+                            
+                        }
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">註冊會員</a>
+                        </li>  
+                        <li class="nav-item">
+                            @if (TempData["id2"] != null)
+                            {
+                                <img src="@TempData["avatar2"]" class="profile-img" />
+                                <span>@(member!.UserId)你好!</span>
+                                
+                            }
+                            else
+                            {
+                                <img src="/img/Member/defaultAvatar.jpg" class="profile-img" />
+                                <span>尚未登入</span>
+                            }
 
+                        </li>
 
-            <!-- 導覽列右邊 -->
-            <div id="nav-right">
-                <!-- 會員 -->
-                <a href="/Account/Login"><img src="~/img/customer_white.png" id="customer_icon"></a>
-
-                <!-- 購物車 -->
-                <input type="checkbox" id="chart-toggle">
-                <label for="chart-toggle"><img src="~/img/shopping-cart_white.png" id="chart_icon"></label>
-                <div class="shoppingList">
-
-                    <form action="~/Cart/Payment" method="post">
-                    <div id="wantToBuy">
-                            <table>
-                                <tbody id="shop">
-                                </tbody>
-                            </table>
-                            @* <input type="submit" value="Submit Form"> *@
-                        <p id="defulttext"><br>空空如也</p>
-                    </div>
-                    <hr>
-                    <div id="checkoutArea">
-                        <button class="checkoutBtn"><a href="~/Cart/Payment" class="chechoutLink"></a>結帳</button>
-                        @* <a href="#" class="chechoutLink"><button class="checkoutBtn">結帳</button></a> *@
-                    </div>
-                    </form>
+                    </ul>
                 </div>
-                <!-- 切換語言 -->
-                <input type="checkbox" id="language-toggle">
-                <label for="language-toggle"><img src="~/img/translate_white.png"></label>
-                <ul class="language">
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">日本語</a></li>
-                </ul>
             </div>
         </nav>
     </header>
-
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer>
-        <p>CopyRight Reserved</p>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - WebApplication1_1105_TSET_member5 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
     </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    @* <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@
-
-
-
-    <script>
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        let totalPrice = 0;
-        const cartItemsContainer = document.getElementById('shop');
-        if (cart.length === 0) {
-            const emptyRow = document.createElement('tr');
-            const emptyMessage = document.createElement('td');
-            emptyMessage.setAttribute('colspan', '6');
-            emptyMessage.innerHTML = '購物車是空的';
-            emptyRow.appendChild(emptyMessage);
-            cartItemsContainer.appendChild(emptyRow);
-        } else {
-            $("#defulttext").text("");
-            cart.forEach((item, index) => {
-                const row = document.createElement('tr');
-                //-------------------------------------------------------
-                // 存入 OrderDetail item
-                const itemCell = document.createElement('td');
-                const inputNO = document.createElement('input');
-                inputNO.type = 'hidden';
-                inputNO.name = 'itemNO';
-                inputNO.value = index + 1;
-                itemCell.appendChild(inputNO);
-                // itemCell.innerHTML += index + 1;
-                row.appendChild(itemCell);
-                //-------------------------------------------------------
-                // 圖片
-                const imgCell = document.createElement('td');
-                const inputIMGSRC = document.createElement('input');
-                inputIMGSRC.type = 'hidden';
-                inputIMGSRC.name = "imgsrc";
-                inputIMGSRC.value = item.image;
-                const inputIMG = document.createElement('img');
-                inputIMG.name = 'itemimg';
-                inputIMG.src = item.image;
-                inputIMG.style.width = "100px"; // 之後要刪 我一定會忘記
-                inputIMG.style.hight = "100px"; // 之後要刪 我一定會忘記
-                imgCell.appendChild(inputIMG);
-                imgCell.appendChild(inputIMGSRC);
-                row.appendChild(imgCell);
-                //-------------------------------------------------------
-                const nameCell = document.createElement('td');
-                const inputName = document.createElement('input');
-                inputName.type = 'hidden';
-                inputName.name = 'itemNane';
-                inputName.value = item.name;
-                nameCell.appendChild(inputName);
-                // -------------------------------------
-                const inputProductId = document.createElement('input');
-                inputProductId.type = 'hidden';
-                inputProductId.name = 'itemId';
-                inputProductId.value = item.productId;
-                nameCell.appendChild(inputProductId);
-                nameCell.innerHTML += item.name;
-                // 插入 name 到 td
-                row.appendChild(nameCell);
-                //-------------------------------------------------------
-                const QTYCell = document.createElement('td');
-                // 新增一個按鈕元素
-                const DECButton = document.createElement('button');
-                DECButton.type = 'button';
-                const inputQTY = document.createElement('input');
-                inputQTY.type = 'hidden';
-                inputQTY.name = 'itemQTY';
-                inputQTY.value = item.qty;
-                QTYCell.appendChild(inputQTY);
-                DECButton.innerHTML += ' - ';
-                DECButton.onclick = () => changeQTY(index, -1); // 調用+-函數
-                // 新增一個按鈕元素
-                const ADDButton = document.createElement('button');
-                ADDButton.type = 'button';
-                ADDButton.innerHTML += ' + ';
-                ADDButton.onclick = () => changeQTY(index, 1);  // 調用+-函數
-                const QTY = document.createElement('span');
-                QTY.innerHTML += item.qty;
-                QTY.id = `QTY-${index}`; // 設定該 span 的id，函數 changeQTY 使用
-                QTYCell.appendChild(DECButton);
-                QTYCell.appendChild(QTY);
-                QTYCell.appendChild(ADDButton);
-                row.appendChild(QTYCell); // 將結果插入 td
-                //-------------------------------------------------------
-                // 單價
-                const priceCell = document.createElement('td');
-                const inputprice = document.createElement('input');
-                inputprice.type = 'hidden';
-                inputprice.name = 'itemprice';
-                inputprice.value = item.price;
-                priceCell.appendChild(inputprice);
-                // priceCell.innerHTML += `$${item.price.toLocaleString()}`;
-                row.appendChild(priceCell);
-                //-------------------------------------------------------
-                // 總價 (數量 * 單價)
-                const totalCell = document.createElement('td');
-                const inputtotal = document.createElement('input');
-                inputtotal.type = 'hidden';
-                inputprice.id = "itemtotal";
-                inputtotal.name = 'itemtotal';
-                inputtotal.value = item.price * item.qty;
-                totalCell.appendChild(inputtotal);
-                totalCell.innerHTML += `$${(item.price * item.qty).toLocaleString()}`;
-                totalCell.id = `total-${index}`;
-                row.appendChild(totalCell);
-                //-------------------------------------------------------
-                // 操作（移除按鈕）
-                const actionCell = document.createElement('td');
-                const removeButton = document.createElement('button');
-                removeButton.type = 'button';
-                removeButton.classList.add('delete');
-                removeButton.innerHTML = '刪除';
-                removeButton.onclick = function () {
-                    removeFromCart(index, item.productId); // 點擊按鈕時調用移除函數
-                };
-                actionCell.appendChild(removeButton);
-                row.appendChild(actionCell);
-                //-------------------------------------------------------
-                // 新增一筆資料 tr
-                cartItemsContainer.appendChild(row);
-                totalPrice += item.price * item.qty; // 全部總和
-            });
-        }
-        // 改變商品數量
-        function changeQTY(index, change) {
-            // index 第幾個索引、- 還是 +
-            if (cart[index].qty + change > 0) {
-                cart[index].qty += change;
-                document.getElementById(`QTY-${index}`).innerHTML = cart[index].qty;
-                document.getElementById(`total-${index}`).innerHTML = `$${(cart[index].price * cart[index].qty).toLocaleString()}`;
-                localStorage.setItem('cart', JSON.stringify(cart)); // 將結果重新記錄到 本機儲存
-            }
-            // shop
-            document.getElementById("itemtotal").innerHTML.reload;
-            // document.location.reload();
-        }
-        // 移除的 某 項商品
-        function removeFromCart(index, ProductID) {
-            cart.splice(index, 1); // 移除索引上的這一個元素
-            localStorage.setItem('cart', JSON.stringify(cart)); // 更新 localStorage，轉成字串
-            window.location.reload();
-
-            Deletecartitem(ProductID);
-
-        }
-        // 清空購物車
-        function clearCart() {
-            // 清空 localStorage 中的購物車資料
-            localStorage.removeItem('cart');
-            // 重新加載頁面
-            document.location.reload();
-        }
-        const totle = document.querySelector(".total-price");
-        document.getElementById("totalprice").value = totalPrice;
-        totle.append(`總和為: $${totalPrice.toLocaleString()}`);
-        // totle.innerHTML = `總和為: $${totalPrice.toLocaleString()}`;
-
-
-    </script>
-
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

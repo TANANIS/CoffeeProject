@@ -1,6 +1,6 @@
-﻿using Coffee.Models;
+﻿using WebApplication1_1105_TSET_member5.Models;
 
-namespace Coffee.Views.Account
+namespace WebApplication1_1105_TSET_member5.Views.Account
 {
     public class OrderDetailViewModel
     {

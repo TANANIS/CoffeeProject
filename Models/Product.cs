@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coffee.Models;
+namespace WebApplication1_1105_TSET_member5.Models;
 
 public partial class Product
 {
@@ -33,7 +33,9 @@ public partial class Product
 
     public DateTime? UpdateDate { get; set; }
 
-    public string? Timelimit { get; set; }
+    public bool? Dripbag { get; set; }
+
+    public DateTime? Timelimit { get; set; }
 
     public byte? Fragrance { get; set; }
 
@@ -47,9 +49,13 @@ public partial class Product
 
     public string? Method { get; set; }
 
-    public string? Img { get; set; }
+    public string? ImgA { get; set; }
 
-    public bool? Status { get; set; }
+    public string? ImgB { get; set; }
 
-    public string? Weight { get; set; }
+    public string? ImgC { get; set; }
+
+    public string? ImgD { get; set; }
+
+    public short? Weight { get; set; }
 }

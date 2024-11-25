@@ -1,4 +1,4 @@
-﻿@using Coffee.Views.Account
+﻿@using WebApplication1_1105_TSET_member5.Views.Account
 
 @model LoginViewModel
 @*
@@ -6,18 +6,51 @@
 *@
 @{
 }
-<h2>登入</h2>
-<form asp-action="Login" method="post">
-    <div>
-        <label asp-for="UserId"></label>
-        <input asp-for="UserId" />
-        <span asp-validation-for="UserId"></span>
-    </div>
-    <div>
-        <label asp-for="Password"></label>
-        <input asp-for="Password" type="password" />
-        <span asp-validation-for="Password"></span>
-    </div>
 
-    <button type="submit">登入</button>
-</form>
+<style>
+	/* 內部白色背景的 div */
+	.squre2 {
+		width: 50%;
+		background-color: #ffffff;
+		border-radius: 10px; /* 圓角 */
+		padding: 30px; /* 內邊距，讓內容不會緊貼邊框 */
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 輕微陰影 */
+	}
+
+	/* 外層 div 圓角和背景顏色 */
+	.squre3 {
+		background-color: #2E724A;
+		border-radius: 15px; /* 設置圓角 */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 60vh; /* 使容器至少佔滿整個視口 */
+	}
+
+</style>
+
+
+<h2 class="text-center">歡迎光臨!</h2>
+<div class="squre3">
+	<div class="squre2">
+		<div class="p-5">
+			<form asp-action="Login" method="post" class="user">
+				<div class="form-group">
+					<input asp-for="UserId" class="form-control form-control-user"
+						   placeholder="使用者帳號" />
+					<span asp-validation-for="UserId"></span>
+				</div>
+				<div class="form-group">
+					<input asp-for="Password" type="password"
+						   class="form-control form-control-user"
+						   placeholder="密碼包含大小寫、數字" />
+					<span asp-validation-for="Password"></span>
+				</div>
+
+				<button type="submit">登入</button>
+				<a href=# class="small">忘記密碼</a>
+			</form>
+		</div>
+	</div>
+
+</div>

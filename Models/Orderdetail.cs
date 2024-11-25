@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coffee.Models;
+namespace WebApplication1_1105_TSET_member5.Models;
 
 public partial class Orderdetail
 {

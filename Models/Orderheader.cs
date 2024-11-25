@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coffee.Models;
+namespace WebApplication1_1105_TSET_member5.Models;
 
 public partial class Orderheader
 {
@@ -17,6 +17,8 @@ public partial class Orderheader
 
     public int? Total { get; set; }
 
+    public string? OrderStatus { get; set; }
+
     public string? ShipStatus { get; set; }
 
     public string? CreateUser { get; set; }
@@ -26,6 +28,4 @@ public partial class Orderheader
     public DateTime? CreateDate { get; set; }
 
     public DateTime? UpdateDate { get; set; }
-
-    public string? Status { get; set; }
 }

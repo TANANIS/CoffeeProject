@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jsrad\\Desktop\\20241121\\CoffeeProject-index - 複製 - 複製\\Coffee.csproj": {}
+    "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jsrad\\Desktop\\20241121\\CoffeeProject-index - 複製 - 複製\\Coffee.csproj": {
+    "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jsrad\\Desktop\\20241121\\CoffeeProject-index - 複製 - 複製\\Coffee.csproj",
+        "projectUniqueName": "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj",
         "projectName": "Coffee",
-        "projectPath": "C:\\Users\\jsrad\\Desktop\\20241121\\CoffeeProject-index - 複製 - 複製\\Coffee.csproj",
-        "packagesPath": "C:\\Users\\jsrad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jsrad\\Desktop\\20241121\\CoffeeProject-index - 複製 - 複製\\obj\\",
+        "projectPath": "C:\\Users\\JSrad\\source\\repos\\Coffee\\Coffee.csproj",
+        "packagesPath": "C:\\Users\\JSrad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JSrad\\source\\repos\\Coffee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\VisualStudio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jsrad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JSrad\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -49,18 +49,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
