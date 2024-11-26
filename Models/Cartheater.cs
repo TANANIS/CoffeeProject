@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WebApplication1_1105_TSET_member5.Models;
+namespace Coffee.Models;
 
 public partial class Cartheater
 {

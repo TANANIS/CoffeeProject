@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WebApplication1_1105_TSET_member5.Models;
+namespace Coffee.Models;
 
 public partial class Payment
 {
@@ -32,4 +32,6 @@ public partial class Payment
     public DateTime? CreateDate { get; set; }
 
     public DateTime? UpdateDate { get; set; }
+
+    public string? Status { get; set; }
 }

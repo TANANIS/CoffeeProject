@@ -1,4 +1,4 @@
-namespace WebApplication1_1105_TSET_member5.Models
+namespace Coffee.Models
 {
     public class ErrorViewModel
     {

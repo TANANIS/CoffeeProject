@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
-namespace WebApplication1_1105_TSET_member5.Models;
+namespace Coffee.Models;
 
 public partial class Customer
 {
@@ -12,16 +11,11 @@ public partial class Customer
 
     public string UserId { get; set; } = null!;
 
-	[StringLength(12, ErrorMessage = "密碼長度至少為 {2} 個字符", MinimumLength = 8)]
-	[RegularExpression(@"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8,}$",
-		ErrorMessage = "密碼必須包含大小寫、數字")]
-	public string? Password { get; set; }
+    public string? Password { get; set; }
 
-	[EmailAddress(ErrorMessage = "請輸入有效的電子郵件地址")]
-	public string? Email { get; set; }
+    public string? Email { get; set; }
 
-	[RegularExpression(@"^09\d{8}$", ErrorMessage = "必須是 09 開頭，並且後面跟著 8 位數字。")]
-	public string? Phone { get; set; }
+    public string? Phone { get; set; }
 
     public string? Name { get; set; }
 
@@ -42,4 +36,10 @@ public partial class Customer
     public DateTime? CreateDate { get; set; }
 
     public DateTime? UpdateDate { get; set; }
+
+    public string? Status { get; set; }
+
+    public bool IsSuspended { get; set; }
+
+    public bool IsDeleted { get; set; }
 }
