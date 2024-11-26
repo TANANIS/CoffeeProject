@@ -25,39 +25,39 @@
     "團隊介紹": [
       {
         "name": "徐弘奕",
-        "position": "CEO",
+        "position": "訂單系統負責人",
         "image": "/img/Product/product_img_2.jpg",
-        "description": "負責事務。"
+        "description": "負責設計與開發訂單處理系統及流程，包括購物車功能。"
       },
       {
         "name": "魏暐倫",
-        "position": "CTO",
+        "position": "商品頁面與互動機器人負責人",
         "image": "/img/Product/product_img_2.jpg",
-        "description": "負責事務。"
+        "description": "負責產品詳細頁面的設計、用戶互動的流程式聊天機器人。"
       },
       {
         "name": "梁之泰",
-        "position": "CTO",
+        "position": "WinForms後台與整合負責人",
         "image": "/img/Product/product_img_2.jpg",
-        "description": "負責事務。"
+        "description": "負責後台管理系統的開發與全站功能整合。"
       },
       {
         "name": "陳佳妤",
-        "position": "CTO",
+        "position": "商品總覽清單負責人",
         "image": "/img/Product/product_img_2.jpg",
-        "description": "負責事務。"
+        "description": "負責設計產品目錄，與快速篩選及排序功能。"
       },
       {
         "name": "林煒紘",
-        "position": "CTO",
+        "position": "會員系統負責人",
         "image": "/img/Product/product_img_2.jpg",
-        "description": "負責事務。"
+        "description": "負責會員註冊、登入、管理與設計會員權限系統。"
       },
       {
         "name": "江小姐",
-        "position": "CTO",
+        "position": "網站主頁負責人",
         "image": "/img/Product/product_img_2.jpg",
-        "description": "負責事務。"
+        "description": "負責網站主頁的整體設計與規劃，與咖啡豆素材收集。"
       }
     ]
   },

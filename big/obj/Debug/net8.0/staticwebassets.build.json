@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GbgJNFngCAnPAitqJE+0uHZaLKCsomb9gF0c4tpDMfM=",
+  "Hash": "EOPBV5bKZu56pF4Gon9n3uawEvSV+8/3WzlTnXExlJU=",
   "Source": "big",
   "BasePath": "_content/big",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\ASPNET\\big\\big\\wwwroot\\img\\Product\\9988.png",
+      "SourceId": "big",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ASPNET\\big\\big\\wwwroot\\",
+      "BasePath": "_content/big",
+      "RelativePath": "img/Product/9988.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Product\\9988.png"
     },
     {
       "Identity": "C:\\ASPNET\\big\\big\\wwwroot\\img\\Product\\CB001.jpg",

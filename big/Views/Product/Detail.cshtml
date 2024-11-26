@@ -54,7 +54,7 @@
 			<div class="productFormat">
 				<h1>@Model.ProductName</h1>
 				<hr />
-				<div style="height:150px;background-color: #eef6f2;padding:10px;border-radius:20px;">
+				<div class="top-title-description-block">
 					<p class="top-title-description">@Model.Description</p>
 				</div>
 				<br />
@@ -207,7 +207,7 @@
 				<div class="card-header">&nbsp;味道分布</div>
 				<div class="card-body">
 					@* <p>味道分布圖</p> *@
-					<canvas id="polarAreaChart" style="width: 78%"></canvas>
+					<canvas id="polarAreaChart"></canvas>
 				</div>
 			</div>
 
@@ -215,7 +215,7 @@
 
 
 		@* 手沖咖啡計算機 *@
-		<div class="col-6" style="border-left: 2px dotted lightgray">
+		<div class="col-6 left-divider">
 			<div class="detail-title text-center">
 				<h1 class="detail-title-howtouse">How to use</h1>
 				<small class="detail-title-small">手沖咖啡計算器</small>
@@ -259,7 +259,7 @@
 						</select>
 					</div>
 					<div>
-						<button type="button" class="btn-calculate bg-success" id="btn-calculate" style="width:100%" onclick="calculateParameters()"><span>開始計算</span></button>
+						<button type="button" class="btn-calculate bg-success" id="btn-calculate" onclick="calculateParameters()"><span>開始計算</span></button>
 					</div>
 				</div>
 			</div>

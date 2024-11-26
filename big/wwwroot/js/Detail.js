@@ -418,7 +418,7 @@ $.ajax({
     url: '/data/chatbot.json',
     method: 'GET',
     dataType: 'json',
-    //cache: false, // 防止快取
+    cache: false, // 防止快取
     success: function (data) {
         //console.log("加載的數據：", data);
         chatbotData = data;
@@ -476,28 +476,28 @@ function handleCategory(data, category) {
     if (Array.isArray(data) && data[0]?.name) {
         // 處理團隊介紹卡片
         const cards = data.map(member => `
-            <div class="card" style="width:100px ;margin: 8px;">
-                <img src="${member.image}" class="card-img-top">
-                <div class="card-body">
-                    <strong class="card-title">${member.name}</strong>
-                    <p class="card-text" style="font-size:18px;"><strong>${member.position}</strong></p>
-                    <p class="card-text" style="font-size:12px;">${member.description}</p>
+        <div class="col-md-6 mb-4">
+            <div class="card bg-dark text-white">
+                <img src="${member.image}" class="card-img" alt="${member.name}" style="height: 200px; object-fit: cover;">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">${member.name}</h5>
+                    <p class="card-text"><strong>${member.position}</strong></p>
+                    <p class="card-text">${member.description}</p>
                 </div>
             </div>
-        `).join('');
+        </div>
+    `).join('');
 
         setTimeout(() => {
             $('#chatbot-body').append(`
-                <div class="message-bot">
-                    <div class="card-deck" style="display: flex; flex-wrap: wrap;">
-                        ${cards}
-                    </div>
+            <div class="message-bot">
+                <div class="row">
+                    ${cards}
                 </div>
-            `);
+            </div>
+        `);
             scrollToBottom();
         }, 400);
-
-
     } else if (Array.isArray(data)) {
 
         if (category === "品牌時間軸") {

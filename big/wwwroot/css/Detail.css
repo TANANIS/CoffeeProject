@@ -28,12 +28,19 @@
     gap: 20px;
 }
 
-/* 上方產品標題描述文字 */
+/* 上方產品標題描述 - 區塊 */
+.top-title-description-block {
+    height: 150px;
+    background-color: #eef6f2;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* 上方產品標題描述 - 文字 */
 .top-title-description {
     font-size: 14px;
-    color: rgba(41, 52, 80, 0.8);
+    color: rgba(41, 52, 80, 0.85);
     font-style: italic;
-   
 }
 
 /* 價格文字 */
@@ -123,14 +130,20 @@
 
 /* ------------------------------------------------- 味道極座標圖  -------------------------------------------------*/
 canvas {
-        /* 畫布為塊元素，避免上下空隙 */
+    /* 畫布為塊元素，避免上下空隙 */
     display: block;
-        /* 畫布居中 */
+    /* 畫布居中 */
     margin: auto;
+    width: 78%;
 }
 
 
 /* ------------------------------------------------- 咖啡沖泡機算機  -------------------------------------------------*/
+/* 手沖咖啡計算機 - 左側分隔線 */
+.left-divider {
+    border-left: 2px dotted lightgray;
+}
+
 /* 客製化選項 */
 .custom-block {
     font-size: 15px;
