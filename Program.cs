@@ -1,9 +1,9 @@
 using Coffee.Models;
 using Microsoft.EntityFrameworkCore;
-
+using Coffee.Controllers;
 var builder = WebApplication.CreateBuilder(args);
 
-
+builder.Services.AddScoped<ProductService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -69,7 +69,10 @@ app.MapControllerRoute(
     pattern: "List/{column?}/{category?}",
     defaults: new { controller = "List", action = "All" });
 //
-
+app.MapControllerRoute(
+	name: "Detail",
+	 pattern: "Detail/Detail/{id}",
+	 defaults: new { controller = "Detail", action = "Detail" });
 
 app.MapControllerRoute(
     name: "default",
