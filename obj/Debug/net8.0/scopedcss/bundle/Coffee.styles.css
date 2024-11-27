@@ -108,6 +108,226 @@ text[b-pacp4wtgdj] {
         margin-bottom: 10px;
     }
 }
+/* _content/Coffee/Views/Home/IndexEn.cshtml.rz.scp.css */
+/* world map */
+.app-svg-map--world svg[b-mzljlsbva9] {
+    top: 60px;
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+path[b-mzljlsbva9] {
+    fill: rgba(224, 234, 224, 1);
+    stroke: #ffffff;
+    opacity: 1;
+    stroke-opacity: 1;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    transform: matrix(0.3474, 0, 0, 0.3474, 0, 0);
+    fill-opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+path[b-mzljlsbva9] {
+    opacity: 1;
+    display: block;
+    z-index: 1;
+}
+
+    path:hover[b-mzljlsbva9] {
+        fill: #2e724a;
+    }
+
+text[b-mzljlsbva9] {
+    min-width: 30px;
+    min-height: 30px;
+    font-size: 14px;
+    fill: #8fbc8f;
+    animation: jump-b-mzljlsbva9 2.3s infinite;
+    stroke: #8fbc8f;
+}
+
+    text:hover[b-mzljlsbva9] {
+        cursor: default;
+    }
+
+@keyframes jump-b-mzljlsbva9 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, 1px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* 商品圖輪播 */
+.prodTitle[b-mzljlsbva9] {
+    padding-top: 10px;
+    padding-left: 25px;
+    color: #ffffff;
+    font-size: 1.8em;
+}
+
+.recommend[b-mzljlsbva9] {
+    height: 350px;
+    background-color: #2e724a;
+    /* overflow-x: hidden; */
+}
+
+.swiper[b-mzljlsbva9] {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-slide img[b-mzljlsbva9] {
+    display: block;
+    height: 280px;
+    object-fit: cover;
+}
+
+.swiper-slide[b-mzljlsbva9] {
+    text-align: center;
+    font-size: 18px;
+    background: #2e724a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* map */
+    .map_area[b-mzljlsbva9] {
+        display: none;
+    }
+
+    /* Product */
+    .recommend[b-mzljlsbva9] {
+        height: 100%;
+        background-color: white;
+    }
+
+    .prodTitle[b-mzljlsbva9] {
+        color: #2e724a;
+        margin-bottom: 10px;
+    }
+}
+/* _content/Coffee/Views/Home/IndexJp.cshtml.rz.scp.css */
+/* world map */
+.app-svg-map--world svg[b-jdj6s78df6] {
+    top: 60px;
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+path[b-jdj6s78df6] {
+    fill: rgba(224, 234, 224, 1);
+    stroke: #ffffff;
+    opacity: 1;
+    stroke-opacity: 1;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    transform: matrix(0.3474, 0, 0, 0.3474, 0, 0);
+    fill-opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+path[b-jdj6s78df6] {
+    opacity: 1;
+    display: block;
+    z-index: 1;
+}
+
+    path:hover[b-jdj6s78df6] {
+        fill: #2e724a;
+    }
+
+text[b-jdj6s78df6] {
+    min-width: 30px;
+    min-height: 30px;
+    font-size: 14px;
+    fill: #8fbc8f;
+    animation: jump-b-jdj6s78df6 2.3s infinite;
+    stroke: #8fbc8f;
+}
+
+    text:hover[b-jdj6s78df6] {
+        cursor: default;
+    }
+
+@keyframes jump-b-jdj6s78df6 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, 1px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* 商品圖輪播 */
+.prodTitle[b-jdj6s78df6] {
+    padding-top: 10px;
+    padding-left: 25px;
+    color: #ffffff;
+    font-size: 1.8em;
+}
+
+.recommend[b-jdj6s78df6] {
+    height: 350px;
+    background-color: #2e724a;
+    /* overflow-x: hidden; */
+}
+
+.swiper[b-jdj6s78df6] {
+    width: 100%;
+    height: 300px;
+}
+
+.swiper-slide img[b-jdj6s78df6] {
+    display: block;
+    height: 280px;
+    object-fit: cover;
+}
+
+.swiper-slide[b-jdj6s78df6] {
+    text-align: center;
+    font-size: 18px;
+    background: #2e724a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* map */
+    .map_area[b-jdj6s78df6] {
+        display: none;
+    }
+
+    /* Product */
+    .recommend[b-jdj6s78df6] {
+        height: 100%;
+        background-color: white;
+    }
+
+    .prodTitle[b-jdj6s78df6] {
+        color: #2e724a;
+        margin-bottom: 10px;
+    }
+}
 /* _content/Coffee/Views/List/All.cshtml.rz.scp.css */
 /*修改bootstrap的樣式*/
 .row > *[b-y6dn1fygd1] {
@@ -444,6 +664,104 @@ text[b-pacp4wtgdj] {
         transition: 200ms ease-out;
     }
 /* _content/Coffee/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}*/
+/* _content/Coffee/Views/Shared/_LayoutEn.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/*a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}*/
+/* _content/Coffee/Views/Shared/_LayoutJp.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 

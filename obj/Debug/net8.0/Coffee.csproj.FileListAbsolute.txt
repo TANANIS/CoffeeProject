@@ -1222,3 +1222,7 @@ C:\Users\User\Desktop\main\obj\Debug\net8.0\refint\Coffee.dll
 C:\Users\User\Desktop\main\obj\Debug\net8.0\Coffee.pdb
 C:\Users\User\Desktop\main\obj\Debug\net8.0\Coffee.genruntimeconfig.cache
 C:\Users\User\Desktop\main\obj\Debug\net8.0\ref\Coffee.dll
+C:\Users\User\Desktop\main\obj\Debug\net8.0\scopedcss\Views\Home\IndexEn.cshtml.rz.scp.css
+C:\Users\User\Desktop\main\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutEn.cshtml.rz.scp.css
+C:\Users\User\Desktop\main\obj\Debug\net8.0\scopedcss\Views\Home\IndexJp.cshtml.rz.scp.css
+C:\Users\User\Desktop\main\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutJp.cshtml.rz.scp.css

@@ -21,7 +21,12 @@ namespace Coffee.Controllers
             return View();
         }
 
-        public IActionResult Index_En()
+        public IActionResult IndexEn()
+        {
+            return View();
+        }
+
+        public IActionResult IndexJp()
         {
             return View();
         }

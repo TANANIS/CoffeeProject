@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\detail\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\detail\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\home\\indexjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\home\\indexjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\list\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\list\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\shared\\_layoutjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\shared\\_layoutjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,32 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "All.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\List\\All.cshtml",
-              "RelativeDocumentMoniker": "Views\\List\\All.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\List\\All.cshtml",
-              "RelativeToolTip": "Views\\List\\All.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IndexJp.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\IndexJp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\IndexJp.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\IndexJp.cshtml",
+              "RelativeToolTip": "Views\\Home\\IndexJp.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T07:32:55.037Z",
+              "WhenOpened": "2024-11-27T08:10:48.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T08:10:22.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LayoutJp.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Shared\\_LayoutJp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutJp.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Shared\\_LayoutJp.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LayoutJp.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-27T08:06:44.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Detail\\Detail.cshtml",
-              "RelativeDocumentMoniker": "Views\\Detail\\Detail.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Detail\\Detail.cshtml",
-              "RelativeToolTip": "Views\\Detail\\Detail.cshtml",
-              "ViewState": "AgIAAHwBAAAAAAAAAAAvwIgBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T07:28:23.407Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowBwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T08:05:16.306Z",
               "EditorCaption": ""
             },
             {
@@ -65,45 +87,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T07:26:29.199Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAAAOsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-27T06:40:55.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAwwFAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T06:34:59.671Z",
-              "EditorCaption": ""
             }
           ]
         }
