@@ -163,11 +163,11 @@ namespace Coffee.Controllers
             {
                 if (sort == "asc")
                 {
-                    query3 = query2.OrderBy(p => p.Price);
+                    query3 = query2.OrderByDescending(p => p.Price);
                 }
                 else if (sort == "desc")
                 {
-                    query3 = query2.OrderByDescending(p => p.Price);
+                    query3 = query2.OrderBy(p => p.Price);
                 }
             }
 
