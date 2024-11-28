@@ -1226,3 +1226,4 @@ C:\Users\User\Desktop\main\obj\Debug\net8.0\scopedcss\Views\Home\IndexEn.cshtml.
 C:\Users\User\Desktop\main\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutEn.cshtml.rz.scp.css
 C:\Users\User\Desktop\main\obj\Debug\net8.0\scopedcss\Views\Home\IndexJp.cshtml.rz.scp.css
 C:\Users\User\Desktop\main\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutJp.cshtml.rz.scp.css
+C:\Users\User\Desktop\main\obj\Debug\net8.0\scopedcss\Views\List\AllEn.cshtml.rz.scp.css
