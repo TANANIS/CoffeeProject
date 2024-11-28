@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\home\\indexjp.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\home\\indexjp.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\list\\alljp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\list\\alljp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\home\\index.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\home\\index.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\home\\indexjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\home\\indexjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\wwwroot\\js\\indexjp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:wwwroot\\js\\indexjp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\wwwroot\\js\\indexen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:wwwroot\\js\\indexen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\controllers\\listcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:controllers\\listcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,71 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IndexJp.cshtml.css",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\IndexJp.cshtml.css",
-              "RelativeDocumentMoniker": "Views\\Home\\IndexJp.cshtml.css",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\IndexJp.cshtml.css",
-              "RelativeToolTip": "Views\\Home\\IndexJp.cshtml.css",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-28T03:03:07.518Z",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T03:19:33.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IndexJp.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\IndexJp.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\IndexJp.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\IndexJp.cshtml",
-              "RelativeToolTip": "Views\\Home\\IndexJp.cshtml",
-              "ViewState": "AgIAAJ4CAAAAAAAAAAAAAKkCAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-28T03:02:27.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "indexJp.js",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\indexJp.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\indexJp.js",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\indexJp.js",
-              "RelativeToolTip": "wwwroot\\js\\indexJp.js",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAIwGgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-28T03:02:05.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "indexEn.js",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\indexEn.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\indexEn.js",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\indexEn.js",
-              "RelativeToolTip": "wwwroot\\js\\indexEn.js",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAiwGgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-28T03:00:11.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAwFEAAAA3AAAAAAAAAA==",
+              "Title": "ListController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Controllers\\ListController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ListController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Controllers\\ListController.cs",
+              "RelativeToolTip": "Controllers\\ListController.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAiwI4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T02:54:24.551Z",
+              "WhenOpened": "2024-11-28T03:18:45.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AllJp.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\List\\AllJp.cshtml",
+              "RelativeDocumentMoniker": "Views\\List\\AllJp.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\List\\AllJp.cshtml",
+              "RelativeToolTip": "Views\\List\\AllJp.cshtml",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAAAN0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T03:17:45.567Z",
               "EditorCaption": ""
             },
             {
@@ -108,25 +70,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.cshtml.css",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\index.cshtml.css",
-              "RelativeDocumentMoniker": "Views\\Home\\index.cshtml.css",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\index.cshtml.css",
-              "RelativeToolTip": "Views\\Home\\index.cshtml.css",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-28T03:03:21.242Z",
-              "EditorCaption": ""
             }
           ]
         }
