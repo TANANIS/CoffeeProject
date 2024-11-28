@@ -309,6 +309,14 @@
       "PackagePath": "staticwebassets\\js\\index.js"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\indexEn.js",
+      "PackagePath": "staticwebassets\\js\\indexEn.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\indexJp.js",
+      "PackagePath": "staticwebassets\\js\\indexJp.js"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

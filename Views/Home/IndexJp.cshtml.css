@@ -32,7 +32,7 @@ path {
 text {
     min-width: 30px;
     min-height: 30px;
-    font-size: 14px;
+    font-size: 9.5px;
     fill: #8fbc8f;
     animation: jump 2.3s infinite;
     stroke: #8fbc8f;
