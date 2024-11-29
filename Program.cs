@@ -86,6 +86,16 @@ app.MapControllerRoute(
 	 defaults: new { controller = "Detail", action = "Detail" });
 
 app.MapControllerRoute(
+	name: "DetailEn",
+	 pattern: "DetailEn/DetailEn/{id}",
+	 defaults: new { controller = "Detail", action = "DetailEn" });
+
+app.MapControllerRoute(
+	name: "DetailJp",
+	 pattern: "DetailJp/DetailJp/{id}",
+	 defaults: new { controller = "Detail", action = "DetailJp" });
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
