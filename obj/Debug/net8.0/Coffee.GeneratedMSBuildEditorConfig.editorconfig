@@ -70,12 +70,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxUUlkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/main/Views/Detail/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXERldGFpbC5jc2h0bWw=
+[C:/Users/User/Desktop/main/Views/DetailEn/DetailEn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsRW5cRGV0YWlsRW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/main/Views/Detail/DetailEn.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXERldGFpbEVuLmNzaHRtbA==
+[C:/Users/User/Desktop/main/Views/DetailJp/DetailJp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsSnBcRGV0YWlsSnAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/main/Views/Detail/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsXERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Desktop/main/Views/Detail/DetailJp.cshtml]
@@ -92,6 +96,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/Desktop/main/Views/Shared/_PartialChatBot.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsQ2hhdEJvdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/main/Views/Shared/_PartialChatBotEn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsQ2hhdEJvdEVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/main/Views/Shared/_PartialChatBotJp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsQ2hhdEJvdEpwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Desktop/main/Views/Shared/_PartialItem.cshtml]

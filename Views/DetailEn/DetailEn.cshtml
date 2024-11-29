@@ -1,6 +1,6 @@
 ﻿<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/css/Detail.css" asp-append-version="true" />
-@model Product
+@model ProductEn
 
 @{
 	Layout = "_LayoutEn";
@@ -229,8 +229,10 @@
 				@* <small class="detail-title-small">手沖咖啡計算器</small> *@
 			</div>
 			<br />
-			<p class="bottom-title-description">Want to customize your coffee experience? Share your preferences, 
-				and we'll tailor a brewing recipe just for you. It's like having a personal barista at home.</p>
+			<p class="bottom-title-description">
+				Want to customize your coffee experience? Share your preferences,
+				and we'll tailor a brewing recipe just for you. It's like having a personal barista at home.
+			</p>
 
 
 			@* 參數設定區 *@
@@ -381,19 +383,20 @@
 		<ul>
 			<li>To ensure the freshness and food safety of our coffee beans, we are unable to offer any grinding service. We apologize for any inconvenience this may cause.</li>
 			<li>
-				Coffee beans naturally contain oils. During the roasting process, the beans expand and crack, allowing the oils to rise to the surface. After roasting, 
-				coffee beans continue to release carbon dioxide, pushing more oil to the surface. This process is natural and can cause the beans to appear oily, 
+				Coffee beans naturally contain oils. During the roasting process, the beans expand and crack, allowing the oils to rise to the surface. After roasting,
+				coffee beans continue to release carbon dioxide, pushing more oil to the surface. This process is natural and can cause the beans to appear oily,
 				especially in medium and dark roasts.
 			</li>
 		</ul>
 	</div>
 
-	@await Html.PartialAsync("_PartialChatBot")
+	@await Html.PartialAsync("_PartialChatBotEn")
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>  @*引用APEXCHARTS.js*@
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>    @*引用CHARTS.js*@
 	<script type="text/javascript">
 		var shareid = @shareid
 	</script>
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="~/js/Detail.js" asp-append-version="true"></script>
+	<script src="~/js/DetailEn.js" asp-append-version="true"></script>
 </body>
+

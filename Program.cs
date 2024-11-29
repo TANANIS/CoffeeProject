@@ -4,6 +4,8 @@ using Coffee.Controllers;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<ProductServiceEn>();
+builder.Services.AddScoped<ProductServiceJp>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -88,12 +90,12 @@ app.MapControllerRoute(
 app.MapControllerRoute(
 	name: "DetailEn",
 	 pattern: "DetailEn/DetailEn/{id}",
-	 defaults: new { controller = "Detail", action = "DetailEn" });
+	 defaults: new { controller = "DetailEn", action = "DetailEn" });
 
 app.MapControllerRoute(
 	name: "DetailJp",
 	 pattern: "DetailJp/DetailJp/{id}",
-	 defaults: new { controller = "Detail", action = "DetailJp" });
+	 defaults: new { controller = "DetailJp", action = "DetailJp" });
 
 app.MapControllerRoute(
     name: "default",

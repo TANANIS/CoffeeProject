@@ -11,70 +11,6 @@ namespace Coffee.Controllers
 			_productService = productService;
 		}
 
-		// ------- 英文頁面
-		public async Task<IActionResult> DetailEn(int id)
-		{
-
-			// 使用 ProductService 獲取商品資料
-			var product = await _productService.Get_Product_By_IdAsync(id);
-			if (product == null)
-			{
-				return NotFound();
-			}
-
-			// 獲取欄位不重複值
-			var all_country = await _productService.Get_All_Country_Async();
-			var all_baking = await _productService.Get_All_Baking_Async();
-			var all_flavor = await _productService.Get_All_flavor_Async();
-			var all_method = await _productService.Get_All_Method_Async();
-			var all_weight = await _productService.Get_All_Weight_Async();
-			var all_time_limit = await _productService.Get_All_Timelimit_Async();
-
-			// 傳遞資料到 View
-			ViewBag.all_country = all_country;
-			ViewBag.all_baking = all_baking;
-			ViewBag.all_flavor = all_flavor;
-			ViewBag.all_method = all_method;
-			ViewBag.all_weight = all_weight;
-			ViewBag.all_time_limit = all_time_limit;
-
-			// 傳資料到前端 view 給 JS 抓 url 的 id 值
-			ViewBag.shareid = id;
-			return View(product);
-		}
-
-		// ------- 日文頁面
-		public async Task<IActionResult> DetailJp(int id)
-		{
-
-			// 使用 ProductService 獲取商品資料
-			var product = await _productService.Get_Product_By_IdAsync(id);
-			if (product == null)
-			{
-				return NotFound();
-			}
-
-			// 獲取欄位不重複值
-			var all_country = await _productService.Get_All_Country_Async();
-			var all_baking = await _productService.Get_All_Baking_Async();
-			var all_flavor = await _productService.Get_All_flavor_Async();
-			var all_method = await _productService.Get_All_Method_Async();
-			var all_weight = await _productService.Get_All_Weight_Async();
-			var all_time_limit = await _productService.Get_All_Timelimit_Async();
-
-			// 傳遞資料到 View
-			ViewBag.all_country = all_country;
-			ViewBag.all_baking = all_baking;
-			ViewBag.all_flavor = all_flavor;
-			ViewBag.all_method = all_method;
-			ViewBag.all_weight = all_weight;
-			ViewBag.all_time_limit = all_time_limit;
-
-			// 傳資料到前端 view 給 JS 抓 url 的 id 值
-			ViewBag.shareid = id;
-			return View(product);
-		}
-
 		public async Task<IActionResult> Detail(int id)
 		{
 
@@ -166,5 +102,8 @@ namespace Coffee.Controllers
 			// 返回JSON格式的研磨粗細
 			return Json(new { grindsize = grind_size, extractionconditions = extraction_conditions, addwater = add_water });
 		}
+
+
+		
 	}
 }

@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\data\\chatbot.json"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\data\\chatbotEn.json",
+      "PackagePath": "staticwebassets\\data\\chatbotEn.json"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\data\\chatbotJp.json",
+      "PackagePath": "staticwebassets\\data\\chatbotJp.json"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -299,6 +307,14 @@
     {
       "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\Detail.js",
       "PackagePath": "staticwebassets\\js\\Detail.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\DetailEn.js",
+      "PackagePath": "staticwebassets\\js\\DetailEn.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\DetailJp.js",
+      "PackagePath": "staticwebassets\\js\\DetailJp.js"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\List.js",
