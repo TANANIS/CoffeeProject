@@ -15,6 +15,8 @@ public partial class ProjectContext : DbContext
     {
     }
 
+    public virtual DbSet<Admlookup> Admlookups { get; set; }
+
     public virtual DbSet<Cartdetail> Cartdetails { get; set; }
 
     public virtual DbSet<Cartheater> Cartheaters { get; set; }
@@ -29,6 +31,10 @@ public partial class ProjectContext : DbContext
 
     public virtual DbSet<Product> Products { get; set; }
 
+    public virtual DbSet<ProductEn> ProductEns { get; set; }
+
+    public virtual DbSet<ProductJp> ProductJps { get; set; }
+
     public virtual DbSet<Stockheader> Stockheaders { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
@@ -41,12 +47,49 @@ public partial class ProjectContext : DbContext
 
     public virtual DbSet<VProductStock> VProductStocks { get; set; }
 
-//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-//        => optionsBuilder.UseSqlServer("Server=.\\SQLEXPRESS;Database=PROJECT;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True;");
-
+  
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Admlookup>(entity =>
+        {
+            entity.HasKey(e => e.Lookupid).HasName("PK__ADMLOOKU__7F261053169B8C16");
+
+            entity.ToTable("ADMLOOKUP");
+
+            entity.Property(e => e.Lookupid)
+                .HasMaxLength(12)
+                .IsUnicode(false)
+                .HasColumnName("LOOKUPID");
+            entity.Property(e => e.Classno)
+                .HasMaxLength(10)
+                .IsUnicode(false)
+                .HasColumnName("CLASSNO");
+            entity.Property(e => e.Createdate)
+                .HasColumnType("datetime")
+                .HasColumnName("CREATEDATE");
+            entity.Property(e => e.Createuser)
+                .HasMaxLength(12)
+                .IsUnicode(false)
+                .HasColumnName("CREATEUSER");
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("ID");
+            entity.Property(e => e.Name)
+                .HasMaxLength(12)
+                .IsUnicode(false)
+                .HasColumnName("NAME");
+            entity.Property(e => e.Status)
+                .HasMaxLength(5)
+                .IsUnicode(false);
+            entity.Property(e => e.Updatedate)
+                .HasColumnType("datetime")
+                .HasColumnName("UPDATEDATE");
+            entity.Property(e => e.Updateuser)
+                .HasMaxLength(12)
+                .IsUnicode(false)
+                .HasColumnName("UPDATEUSER");
+        });
+
         modelBuilder.Entity<Cartdetail>(entity =>
         {
             entity.HasKey(e => new { e.CartId, e.CartItemId }).HasName("PK__CARTDETA__51BCD7B7586C69E1");
@@ -167,6 +210,7 @@ public partial class ProjectContext : DbContext
             entity.Property(e => e.OrderId)
                 .HasMaxLength(12)
                 .IsUnicode(false);
+            entity.Property(e => e.Comment).HasMaxLength(1000);
             entity.Property(e => e.CreateDate).HasColumnType("datetime");
             entity.Property(e => e.CreateUser)
                 .HasMaxLength(12)
@@ -178,13 +222,22 @@ public partial class ProjectContext : DbContext
             entity.Property(e => e.Id)
                 .ValueGeneratedOnAdd()
                 .HasColumnName("ID");
+            entity.Property(e => e.Mail)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Name).HasMaxLength(20);
             entity.Property(e => e.OrderDate).HasColumnType("datetime");
             entity.Property(e => e.Payment)
-                .HasMaxLength(6)
-                .IsUnicode(false)
-                .IsFixedLength();
+                .HasMaxLength(12)
+                .IsUnicode(false);
+            entity.Property(e => e.Phone)
+                .HasMaxLength(10)
+                .IsUnicode(false);
             entity.Property(e => e.ShipStatus)
-                .HasMaxLength(1)
+                .HasMaxLength(5)
+                .IsUnicode(false);
+            entity.Property(e => e.ShippingMethod)
+                .HasMaxLength(12)
                 .IsUnicode(false);
             entity.Property(e => e.Status)
                 .HasMaxLength(5)
@@ -242,14 +295,10 @@ public partial class ProjectContext : DbContext
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.HasKey(e => e.ProductId).HasName("PK__CUSTOMER__B40CC6EDED44FF8B");
+            entity
+                .HasNoKey()
+                .ToTable("PRODUCT");
 
-            entity.ToTable("PRODUCT");
-
-            entity.Property(e => e.ProductId)
-                .HasMaxLength(100)
-                .IsUnicode(false)
-                .HasColumnName("ProductID");
             entity.Property(e => e.Baking)
                 .HasMaxLength(100)
                 .IsUnicode(false);
@@ -269,11 +318,99 @@ public partial class ProjectContext : DbContext
                 .ValueGeneratedOnAdd()
                 .HasColumnName("ID");
             entity.Property(e => e.Img)
-                .HasMaxLength(100)
+                .HasMaxLength(46)
                 .IsUnicode(false);
             entity.Property(e => e.Method)
                 .HasMaxLength(100)
                 .IsUnicode(false);
+            entity.Property(e => e.ProductId)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("ProductID");
+            entity.Property(e => e.ProductName).HasMaxLength(100);
+            entity.Property(e => e.Strong).HasColumnName("STRONG");
+            entity.Property(e => e.Timelimit).HasMaxLength(4);
+            entity.Property(e => e.Uom)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.UpdateDate).HasColumnType("datetime");
+            entity.Property(e => e.UpdateUser).HasMaxLength(12);
+            entity.Property(e => e.Weight)
+                .HasMaxLength(4)
+                .IsFixedLength();
+        });
+
+        modelBuilder.Entity<ProductEn>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("PRODUCT_EN");
+
+            entity.Property(e => e.Baking)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.Category)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.Country)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.CreateDate).HasColumnType("datetime");
+            entity.Property(e => e.CreateUser).HasMaxLength(12);
+            entity.Property(e => e.Description).HasMaxLength(4000);
+            entity.Property(e => e.Flavor)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("ID");
+            entity.Property(e => e.Img)
+                .HasMaxLength(46)
+                .IsUnicode(false);
+            entity.Property(e => e.Method)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.ProductId)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("ProductID");
+            entity.Property(e => e.ProductName).HasMaxLength(100);
+            entity.Property(e => e.Strong).HasColumnName("STRONG");
+            entity.Property(e => e.Timelimit).HasMaxLength(10);
+            entity.Property(e => e.Uom)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.UpdateDate).HasColumnType("datetime");
+            entity.Property(e => e.UpdateUser).HasMaxLength(12);
+            entity.Property(e => e.Weight)
+                .HasMaxLength(4)
+                .IsFixedLength();
+        });
+
+        modelBuilder.Entity<ProductJp>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("PRODUCT_JP");
+
+            entity.Property(e => e.Baking).HasMaxLength(100);
+            entity.Property(e => e.Category).HasMaxLength(100);
+            entity.Property(e => e.Country).HasMaxLength(100);
+            entity.Property(e => e.CreateDate).HasColumnType("datetime");
+            entity.Property(e => e.CreateUser).HasMaxLength(12);
+            entity.Property(e => e.Description).HasMaxLength(200);
+            entity.Property(e => e.Flavor).HasMaxLength(100);
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("ID");
+            entity.Property(e => e.Img)
+                .HasMaxLength(46)
+                .IsUnicode(false);
+            entity.Property(e => e.Method).HasMaxLength(100);
+            entity.Property(e => e.ProductId)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("ProductID");
             entity.Property(e => e.ProductName).HasMaxLength(100);
             entity.Property(e => e.Strong).HasColumnName("STRONG");
             entity.Property(e => e.Timelimit).HasMaxLength(4);
@@ -367,6 +504,9 @@ public partial class ProjectContext : DbContext
                 .HasMaxLength(5)
                 .IsUnicode(false)
                 .HasColumnName("d_Status");
+            entity.Property(e => e.Img)
+                .HasMaxLength(28)
+                .IsUnicode(false);
             entity.Property(e => e.ProductId)
                 .HasMaxLength(100)
                 .IsUnicode(false);
@@ -386,23 +526,45 @@ public partial class ProjectContext : DbContext
                 .HasNoKey()
                 .ToView("v_orderheader_orderdetail");
 
+            entity.Property(e => e.Comment).HasMaxLength(1000);
             entity.Property(e => e.CustomerId)
                 .HasMaxLength(12)
                 .IsUnicode(false)
                 .HasColumnName("CustomerID");
+            entity.Property(e => e.CustomerName)
+                .HasMaxLength(12)
+                .IsUnicode(false);
+            entity.Property(e => e.Mail)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.Name).HasMaxLength(20);
             entity.Property(e => e.OrderDate).HasColumnType("datetime");
             entity.Property(e => e.OrderId)
                 .HasMaxLength(12)
                 .IsUnicode(false);
+            entity.Property(e => e.OrderStatus)
+                .HasMaxLength(12)
+                .IsUnicode(false);
+            entity.Property(e => e.PayMathod)
+                .HasMaxLength(12)
+                .IsUnicode(false);
             entity.Property(e => e.Payment)
-                .HasMaxLength(6)
-                .IsUnicode(false)
-                .IsFixedLength();
+                .HasMaxLength(12)
+                .IsUnicode(false);
+            entity.Property(e => e.Phone)
+                .HasMaxLength(10)
+                .IsUnicode(false);
             entity.Property(e => e.ProductId)
                 .HasMaxLength(12)
                 .IsUnicode(false);
+            entity.Property(e => e.ShipMethod)
+                .HasMaxLength(12)
+                .IsUnicode(false);
+            entity.Property(e => e.ShipStatu)
+                .HasMaxLength(12)
+                .IsUnicode(false);
             entity.Property(e => e.ShipStatus)
-                .HasMaxLength(1)
+                .HasMaxLength(5)
                 .IsUnicode(false);
             entity.Property(e => e.Status)
                 .HasMaxLength(5)

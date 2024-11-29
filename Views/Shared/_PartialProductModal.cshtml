@@ -89,7 +89,7 @@
                                 </div>
                                 <hr />
                                 <div>
-                                    <a href="#">more</a>
+                                    <a href="/Detail/Detail/@Model.Id">more</a>
                                 </div>
                             </div>
                         </div>
@@ -99,10 +99,9 @@
         </div>
     </div>
 </div>
-
 <script>
     function AddToCart(button) {
-        // 找到 <tr class="product">  
+        // 找到 <tr class="product">
         const product = button.closest('.modalBtn button');
         // 從 <tr> 元素中獲取商品屬性
         // const userID = "C11070"; // 為使用者登入的資料

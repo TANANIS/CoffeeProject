@@ -63,11 +63,17 @@ app.MapControllerRoute(
     pattern: "List/ShowProductModal",
     defaults: new { controller = "List", action = "ShowProductModal" });
 
+app.MapControllerRoute(
+    name: "ProductEn",
+    pattern: "List/AllEn/{column?}/{category?}",
+    defaults: new { controller = "List", action = "AllEn" });
 
 app.MapControllerRoute(
     name: "Product",
     pattern: "List/{column?}/{category?}",
     defaults: new { controller = "List", action = "All" });
+
+
 //
 app.MapControllerRoute(
 	name: "Detail",
