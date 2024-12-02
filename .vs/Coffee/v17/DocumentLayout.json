@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\detailen\\detailen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\detailen\\detailen.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\wwwroot\\js\\indexjp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:wwwroot\\js\\indexjp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\shared\\_partialchatboten.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\shared\\_partialchatboten.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\home\\indexjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\home\\indexjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\detailjp\\detailjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\detailjp\\detailjp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|c:\\users\\user\\desktop\\main\\views\\account\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{12FF9CEB-2213-4FAB-8FB8-74BB86B6E1B5}|Coffee.csproj|solutionrelative:views\\account\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DetailEn.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\DetailEn\\DetailEn.cshtml",
-              "RelativeDocumentMoniker": "Views\\DetailEn\\DetailEn.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\DetailEn\\DetailEn.cshtml",
-              "RelativeToolTip": "Views\\DetailEn\\DetailEn.cshtml",
-              "ViewState": "AgIAAIQBAAAAEOU1lFcdwJIBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IndexJp.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\IndexJp.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\IndexJp.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Home\\IndexJp.cshtml",
+              "RelativeToolTip": "Views\\Home\\IndexJp.cshtml",
+              "ViewState": "AgIAAJgCAAAAAAAAAAAAAJsCAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T07:53:05.391Z",
+              "WhenOpened": "2024-12-02T05:34:25.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_PartialChatBotEn.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Shared\\_PartialChatBotEn.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_PartialChatBotEn.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Shared\\_PartialChatBotEn.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_PartialChatBotEn.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T07:50:04.757Z",
+              "DocumentIndex": 0,
+              "Title": "indexJp.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\indexJp.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\indexJp.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\wwwroot\\js\\indexJp.js",
+              "RelativeToolTip": "wwwroot\\js\\indexJp.js",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAowKcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-02T05:34:18.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DetailJp.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\DetailJp\\DetailJp.cshtml",
-              "RelativeDocumentMoniker": "Views\\DetailJp\\DetailJp.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\DetailJp\\DetailJp.cshtml",
-              "RelativeToolTip": "Views\\DetailJp\\DetailJp.cshtml",
-              "ViewState": "AgIAAH4BAAAAAAAAAAAQwIUBAAAsAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\main\\Views\\Account\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Details.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\main\\Views\\Account\\Details.cshtml",
+              "RelativeToolTip": "Views\\Account\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T07:33:09.678Z",
+              "WhenOpened": "2024-12-02T05:30:00.021Z",
               "EditorCaption": ""
             },
             {
